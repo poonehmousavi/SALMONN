@@ -1,0 +1,3326 @@
+{
+  "Ses04M_impro08_F024": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro08/Ses04M_impro08_F024.wav",
+    "length": 2.49,
+    "emo": "hap",
+    "text": "make my life a lot easier."
+  },
+  "Ses04M_script03_2_M022": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_M022.wav",
+    "length": 2.61,
+    "emo": "ang",
+    "text": "Going out somewhere, my dear?"
+  },
+  "Ses02F_script02_2_F042": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_2/Ses02F_script02_2_F042.wav",
+    "length": 3.8999375,
+    "emo": "hap",
+    "text": "Well, then we don't need glasses."
+  },
+  "Ses04F_script03_2_M034": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_2/Ses04F_script03_2_M034.wav",
+    "length": 2.4099375,
+    "emo": "ang",
+    "text": "There are people downstairs I suppose."
+  },
+  "Ses03F_script02_2_F038": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_2/Ses03F_script02_2_F038.wav",
+    "length": 3.854,
+    "emo": "sad",
+    "text": "it's not something else. Do you know what I'm trying to say?"
+  },
+  "Ses03F_impro02_M000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_M000.wav",
+    "length": 1.8080625,
+    "emo": "neu",
+    "text": "All right."
+  },
+  "Ses03F_script03_1_F019": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_1/Ses03F_script03_1_F019.wav",
+    "length": 8.6025,
+    "emo": "hap",
+    "text": "Thank you, dear. The same applies to you. Except that if I ever so much as catch you looking at another woman I'll kill you."
+  },
+  "Ses01F_script01_3_M033": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_M033.wav",
+    "length": 18.0983125,
+    "emo": "sad",
+    "text": "But then I came home and it was incredible, you know?  The whole thing was just kind of this random bus accident.  You know, I went back to the rat race again, I went to work."
+  },
+  "Ses05M_script01_1b_M003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_1b/Ses05M_script01_1b_M003.wav",
+    "length": 6.5,
+    "emo": "sad",
+    "text": "I don't know.  But after he saw it, he ran back into the house and started crying in the kitchen."
+  },
+  "Ses05M_script03_2_M030": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M030.wav",
+    "length": 5.6,
+    "emo": "ang",
+    "text": "You know, we could get a really good debate going on about this.  You know intemperate tots."
+  },
+  "Ses03F_impro05_F005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro05/Ses03F_impro05_F005.wav",
+    "length": 7.292125,
+    "emo": "ang",
+    "text": "Wait, sir. You're- You're completely not--what do you mean, stole it? How can they just steal it from an airplane? It was up in the air?"
+  },
+  "Ses04M_script01_1_F012": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_F012.wav",
+    "length": 2.7699375,
+    "emo": "ang",
+    "text": "How are you going to prove it?  Can you prove it?"
+  },
+  "Ses03M_impro02_M013": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_M013.wav",
+    "length": 6.8699375,
+    "emo": "neu",
+    "text": "We'll have internet set up, we'll get web cameras and everything.  My whole family's here too."
+  },
+  "Ses05M_script03_2_M010": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M010.wav",
+    "length": 1.8899375,
+    "emo": "neu",
+    "text": "Do you want some brandy?"
+  },
+  "Ses04F_impro04_M031": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M031.wav",
+    "length": 2.2599375,
+    "emo": "neu",
+    "text": "I'm trying to be helpful."
+  },
+  "Ses04M_impro08_M028": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro08/Ses04M_impro08_M028.wav",
+    "length": 1.3199375,
+    "emo": "neu",
+    "text": "Alright. Take Care."
+  },
+  "Ses05F_impro08_F002": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_F002.wav",
+    "length": 4.4499375,
+    "emo": "neu",
+    "text": "[LAUGHTER] All right.  I'm sorry, sir that you've been having a hard time."
+  },
+  "Ses05M_impro04_F016": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro04/Ses05M_impro04_F016.wav",
+    "length": 1.91,
+    "emo": "neu",
+    "text": "Are you getting defensive?"
+  },
+  "Ses02F_impro07_M028": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro07/Ses02F_impro07_M028.wav",
+    "length": 8.13475,
+    "emo": "hap",
+    "text": "You'll be like are you a fan or a student you know? Student. [LAUGHTER] Oh man, that's awesome."
+  },
+  "Ses02F_script01_3_M031": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_M031.wav",
+    "length": 15.31,
+    "emo": "sad",
+    "text": "Then I came back and it was incredible.  There was no meaning in it here.  The whole thing to them seemed like sort of a bus accident.  I went to work with Dad and that rat race again."
+  },
+  "Ses03M_script01_2_F010": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_2/Ses03M_script01_2_F010.wav",
+    "length": 5.1679375,
+    "emo": "sad",
+    "text": "My worst times I think about her, you know, and I"
+  },
+  "Ses03F_script02_2_M041": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_2/Ses03F_script02_2_M041.wav",
+    "length": 3.7085625,
+    "emo": "hap",
+    "text": "It's not champagne."
+  },
+  "Ses03F_impro03_M010": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro03/Ses03F_impro03_M010.wav",
+    "length": 1.3465625,
+    "emo": "hap",
+    "text": "Oh, my God."
+  },
+  "Ses04M_script01_1_M037": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_M037.wav",
+    "length": 3.81,
+    "emo": "ang",
+    "text": "The business?  The business doesn't inspire me."
+  },
+  "Ses04F_impro02_F009": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro02/Ses04F_impro02_F009.wav",
+    "length": 9.52825,
+    "emo": "sad",
+    "text": "And now- and now it's really shitty timing but now I have to go."
+  },
+  "Ses03F_impro02_M027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_M027.wav",
+    "length": 6.5274375,
+    "emo": "ang",
+    "text": "If your life is going to be in danger and this family is going to be in danger we don't need the job. We'll find the money."
+  },
+  "Ses04M_impro08_M013": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro08/Ses04M_impro08_M013.wav",
+    "length": 5.3445,
+    "emo": "neu",
+    "text": "which you- which you'll have to go into a local Verizon dealer--  or Sprint."
+  },
+  "Ses02F_script01_2_F005": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_2/Ses02F_script01_2_F005.wav",
+    "length": 2.15,
+    "emo": "ang",
+    "text": "It's got that all about it."
+  },
+  "Ses04M_script03_2_F010": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F010.wav",
+    "length": 1.753625,
+    "emo": "ang",
+    "text": "What of it?"
+  },
+  "Ses03M_impro01_F022": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro01/Ses03M_impro01_F022.wav",
+    "length": 4.7190625,
+    "emo": "ang",
+    "text": "Okay.  I'm going to call security. Security!"
+  },
+  "Ses04M_script02_1_M032": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_1/Ses04M_script02_1_M032.wav",
+    "length": 18.1205625,
+    "emo": "hap",
+    "text": "They don't know what drives them.  They don't give it a name or ask a question.  They just turn, as one, and start the swim that brings them here; to this place, where we stand, for a massive celebration of sex and death.  Oh, man, I'm giving myself goose bumps.  All my hairs are popping up."
+  },
+  "Ses02F_script02_1_F001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_1/Ses02F_script02_1_F001.wav",
+    "length": 1.18,
+    "emo": "neu",
+    "text": "What flashlight?"
+  },
+  "Ses05M_impro04_F012": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro04/Ses05M_impro04_F012.wav",
+    "length": 4.6,
+    "emo": "neu",
+    "text": "Wow.  I don't -- I mean, do you- do you have an attitude problem when you're on the job?"
+  },
+  "Ses02F_script02_2_M001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_2/Ses02F_script02_2_M001.wav",
+    "length": 1.31,
+    "emo": "neu",
+    "text": "What I was saying."
+  },
+  "Ses01M_script02_1_M042": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_1/Ses01M_script02_1_M042.wav",
+    "length": 11.2039375,
+    "emo": "hap",
+    "text": "They just all turned at once and they just form this line as long as the California coast.  And they just started swimming..."
+  },
+  "Ses03M_script03_1_F005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_1/Ses03M_script03_1_F005.wav",
+    "length": 4.6424375,
+    "emo": "hap",
+    "text": "That sent shivers up my spine."
+  },
+  "Ses02F_script01_3_M029": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_M029.wav",
+    "length": 13.7099375,
+    "emo": "sad",
+    "text": "I got this idea watching them go down.  Everything was being destroyed, see, but it seemed that there was one new thing being made.  A sort of responsibility.  Man for man."
+  },
+  "Ses02M_script02_2_F016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_2/Ses02M_script02_2_F016.wav",
+    "length": 8.8999375,
+    "emo": "sad",
+    "text": "We thought I was pregnant and we opened a bottle of champagne but no glasses, you asked me to dance, we kicked off our shoes and you popped the cork."
+  },
+  "Ses02M_impro07_M032": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro07/Ses02M_impro07_M032.wav",
+    "length": 4.1255,
+    "emo": "hap",
+    "text": "[LAUGHTER] Thanks, yes, thanks, yes That'll be cool."
+  },
+  "Ses01M_script01_3_M031": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_3/Ses01M_script01_3_M031.wav",
+    "length": 10.49,
+    "emo": "sad",
+    "text": "They didn't die they killed themselves for each other and I mean that exactly, you know a little more selfish and they'll all be here today..."
+  },
+  "Ses03M_script02_2_F040": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_2/Ses03M_script02_2_F040.wav",
+    "length": 10.114875,
+    "emo": "sad",
+    "text": "If anybody wants to be with anybody else it's probably you.  Probably somebody who enjoys herself a little more and is not so hard."
+  },
+  "Ses05M_script03_2_M026": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M026.wav",
+    "length": 7.43,
+    "emo": "ang",
+    "text": "I'm sure you had a riotous time, no restrain at all, very enjoyable.  You never had much anyway."
+  },
+  "Ses04M_impro01_F012": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro01/Ses04M_impro01_F012.wav",
+    "length": 3.2599375,
+    "emo": "neu",
+    "text": "twenty bucks? Please. Go get in that line over there."
+  },
+  "Ses02M_impro06_F006": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_F006.wav",
+    "length": 2.1899375,
+    "emo": "sad",
+    "text": "Totally."
+  },
+  "Ses03F_impro02_F008": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F008.wav",
+    "length": 13.33,
+    "emo": "sad",
+    "text": "And Uh- Yeah. Uh- They're going to need um- more nurses on call for uh- to go overseas to help out with the war."
+  },
+  "Ses01M_script03_2_M030": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_M030.wav",
+    "length": 12.4624375,
+    "emo": "ang",
+    "text": "Oh very, very interesting Amanda.  How about the child of uh... four, six or maybe nine---you know, we could work up a splendid little debate about it, you know?  Intemperate tots."
+  },
+  "Ses05M_script03_2_M032": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M032.wav",
+    "length": 2.1,
+    "emo": "ang",
+    "text": "You better turn that off, I think."
+  },
+  "Ses02F_impro08_F004": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro08/Ses02F_impro08_F004.wav",
+    "length": 7.2851875,
+    "emo": "neu",
+    "text": "Oh, yeah, absolutely.  You know, and especially because you've been waiting so long and I know that, um, you've been having a difficult time."
+  },
+  "Ses02M_script01_3_M022": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script01_3/Ses02M_script01_3_M022.wav",
+    "length": 5.8228125,
+    "emo": "sad",
+    "text": "Yeah, I suppose I have been.  But it's going from me."
+  },
+  "Ses01M_script02_2_M001": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_M001.wav",
+    "length": 8.30475,
+    "emo": "hap",
+    "text": "...to this spot for this massive celebration of like sex and death..."
+  },
+  "Ses05F_script01_3_F024": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script01_3/Ses05F_script01_3_F024.wav",
+    "length": 2.4676875,
+    "emo": "neu",
+    "text": "Do you still feel like that?"
+  },
+  "Ses01F_script01_3_M027": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_M027.wav",
+    "length": 2.2275,
+    "emo": "sad",
+    "text": "Pretty much all."
+  },
+  "Ses05M_script02_2_F001": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_2/Ses05M_script02_2_F001.wav",
+    "length": 1.46,
+    "emo": "neu",
+    "text": "It's ridiculous."
+  },
+  "Ses03F_script01_1_M052": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_1/Ses03F_script01_1_M052.wav",
+    "length": 3.996,
+    "emo": "neu",
+    "text": "I am thinking like that."
+  },
+  "Ses04M_impro03_M017": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro03/Ses04M_impro03_M017.wav",
+    "length": 6.0,
+    "emo": "hap",
+    "text": "Yeah.  But I'm really excited.  So and everybody's going to come out and it'll be a great time.  And--"
+  },
+  "Ses01M_script01_1_F035": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_1/Ses01M_script01_1_F035.wav",
+    "length": 3.377375,
+    "emo": "ang",
+    "text": "Are you crazy?"
+  },
+  "Ses03M_impro05b_M027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05b/Ses03M_impro05b_M027.wav",
+    "length": 2.36,
+    "emo": "ang",
+    "text": "And and, in about..."
+  },
+  "Ses03M_impro07_M023": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_M023.wav",
+    "length": 5.1675,
+    "emo": "hap",
+    "text": "Some miso soup.  You can get whatever.  You can get a vat full of miso soup.  God."
+  },
+  "Ses03M_impro08b_M006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_M006.wav",
+    "length": 2.5199375,
+    "emo": "neu",
+    "text": "Is the phone turned on?"
+  },
+  "Ses03F_impro07_F035": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_F035.wav",
+    "length": 1.970625,
+    "emo": "hap",
+    "text": "[LAUGHTER]. Oh, Joe, I'm so happy."
+  },
+  "Ses02M_script03_1_F029": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_1/Ses02M_script03_1_F029.wav",
+    "length": 2.808375,
+    "emo": "hap",
+    "text": "And very much sillier."
+  },
+  "Ses03M_impro06_M017": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_M017.wav",
+    "length": 4.9405,
+    "emo": "sad",
+    "text": "-do I miss him or do I hate him, you know?"
+  },
+  "Ses03M_impro08a_F015": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08a/Ses03M_impro08a_F015.wav",
+    "length": 4.9690625,
+    "emo": "ang",
+    "text": "I would like to talk to your supervisor.  Obviously you're incompetent and don't understand what I'm asking."
+  },
+  "Ses03F_script03_2_M015": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_M015.wav",
+    "length": 1.6324375,
+    "emo": "ang",
+    "text": "Really, Amanda."
+  },
+  "Ses02M_impro03_M021": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro03/Ses02M_impro03_M021.wav",
+    "length": 4.4399375,
+    "emo": "hap",
+    "text": "Oh yes, they - they you know they love her and so I mean..."
+  },
+  "Ses04M_script01_1_F021": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_F021.wav",
+    "length": 4.1199375,
+    "emo": "ang",
+    "text": "I ignore what I got to ignore.  The girl is Larry's girl."
+  },
+  "Ses02M_impro06_F018": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_F018.wav",
+    "length": 2.01475,
+    "emo": "sad",
+    "text": "Yes."
+  },
+  "Ses01M_impro07_M033": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro07/Ses01M_impro07_M033.wav",
+    "length": 1.79,
+    "emo": "hap",
+    "text": "Pull over.."
+  },
+  "Ses04M_script03_2_F032": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F032.wav",
+    "length": 1.9399375,
+    "emo": "ang",
+    "text": "You always had a weak head."
+  },
+  "Ses05F_impro08_M013": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_M013.wav",
+    "length": 1.93,
+    "emo": "neu",
+    "text": "Okay, great, go ahead."
+  },
+  "Ses04F_impro02_M021": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro02/Ses04F_impro02_M021.wav",
+    "length": 6.7099375,
+    "emo": "ang",
+    "text": "Yeah.  Of course I do because I didn't enlist in this stupid thing.  Why don't you just get out now and then-"
+  },
+  "Ses03M_impro07_M005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_M005.wav",
+    "length": 1.8899375,
+    "emo": "hap",
+    "text": "I got into the..."
+  },
+  "Ses03M_impro02_M005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_M005.wav",
+    "length": 2.0693125,
+    "emo": "sad",
+    "text": "For--"
+  },
+  "Ses03F_impro07_M000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_M000.wav",
+    "length": 2.5166875,
+    "emo": "neu",
+    "text": "Hey, Isabella."
+  },
+  "Ses05M_script01_1_M017": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_1/Ses05M_script01_1_M017.wav",
+    "length": 2.86,
+    "emo": "neu",
+    "text": "I'm going to ask her to marry me."
+  },
+  "Ses03M_impro08b_M001": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_M001.wav",
+    "length": 7.79,
+    "emo": "neu",
+    "text": "I'm sorry ma'am.  What's the nature of your problem?  But first can I get you to tell me your first and last name?"
+  },
+  "Ses03F_impro06_M010": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro06/Ses03F_impro06_M010.wav",
+    "length": 2.4030625,
+    "emo": "sad",
+    "text": "Some people."
+  },
+  "Ses03M_script03_2_F030": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_F030.wav",
+    "length": 1.7433125,
+    "emo": "ang",
+    "text": "You've always had a weak head."
+  },
+  "Ses05F_impro07_F039": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_F039.wav",
+    "length": 1.1599375,
+    "emo": "hap",
+    "text": "exciting."
+  },
+  "Ses05F_script01_3_M023": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script01_3/Ses05F_script01_3_M023.wav",
+    "length": 3.6931875,
+    "emo": "sad",
+    "text": "It's- It's mixed up with so many other things, I-"
+  },
+  "Ses02M_impro02_F001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro02/Ses02M_impro02_F001.wav",
+    "length": 7.8074375,
+    "emo": "sad",
+    "text": "I'm going to miss you too; I don't know what I'm going to do here without you. It's going to be so lonely, and so hard."
+  },
+  "Ses05M_script03_2_F017": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_F017.wav",
+    "length": 1.4199375,
+    "emo": "ang",
+    "text": "No, it isn't."
+  },
+  "Ses03F_script03_1_M007": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_1/Ses03F_script03_1_M007.wav",
+    "length": 4.73,
+    "emo": "hap",
+    "text": "things that should matter dreadfully don't seem to matter at all when one's happy, do they?"
+  },
+  "Ses02M_impro06_F016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_F016.wav",
+    "length": 1.7831875,
+    "emo": "sad",
+    "text": "you shouldn't be alone"
+  },
+  "Ses05F_impro06_M004": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_M004.wav",
+    "length": 3.6299375,
+    "emo": "sad",
+    "text": "It's the worst when they go like that. [GARBAGE] Was he young?"
+  },
+  "Ses05F_script02_2_F017": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script02_2/Ses05F_script02_2_F017.wav",
+    "length": 5.966,
+    "emo": "sad",
+    "text": "I rather not remember some things.  I rather not hope for some things."
+  },
+  "Ses01F_impro07_M019": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro07/Ses01F_impro07_M019.wav",
+    "length": 13.145,
+    "emo": "hap",
+    "text": "That's how you get the big bucks.  Are you messing with the chair? Don't ruin it."
+  },
+  "Ses05M_script01_3_M036": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_3/Ses05M_script01_3_M036.wav",
+    "length": 10.5199375,
+    "emo": "sad",
+    "text": "I felt what you said, ashamed somehow because nobody had changed at all."
+  },
+  "Ses04M_script01_2_F003": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_2/Ses04M_script01_2_F003.wav",
+    "length": 3.87,
+    "emo": "ang",
+    "text": "Nobody comes seven hundred miles just to see."
+  },
+  "Ses03M_impro05a_F012": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05a/Ses03M_impro05a_F012.wav",
+    "length": 6.6399375,
+    "emo": "neu",
+    "text": "I'm very sorry but let's check on this immediately.  This is definitely an emergency.  It seems--"
+  },
+  "Ses02F_impro05_M003": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro05/Ses02F_impro05_M003.wav",
+    "length": 7.3499375,
+    "emo": "neu",
+    "text": "You know, I mean, there's a lot of things that go on under the plane and sometimes, you know, that kind of things happen."
+  },
+  "Ses03M_impro06_F011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F011.wav",
+    "length": 3.894,
+    "emo": "sad",
+    "text": "We're all here for you."
+  },
+  "Ses04F_impro04_F031": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_F031.wav",
+    "length": 3.61,
+    "emo": "ang",
+    "text": "I thought I was pretty clear about what the problem was."
+  },
+  "Ses05M_impro02_F024": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro02/Ses05M_impro02_F024.wav",
+    "length": 1.4199375,
+    "emo": "sad",
+    "text": "[GARBAGE]"
+  },
+  "Ses01M_script03_1_M014": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_1/Ses01M_script03_1_M014.wav",
+    "length": 2.31,
+    "emo": "sad",
+    "text": "Darling, don't say that."
+  },
+  "Ses05F_script03_1_F025": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_1/Ses05F_script03_1_F025.wav",
+    "length": 6.1099375,
+    "emo": "hap",
+    "text": "Charles.  That was his name.  He did wriggle so beautifully."
+  },
+  "Ses05M_script02_2_M005": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_2/Ses05M_script02_2_M005.wav",
+    "length": 9.1099375,
+    "emo": "neu",
+    "text": "uh, Carla Can I ask you a question?  no, don't get upset, but are you having your period?"
+  },
+  "Ses03M_impro04_F023": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro04/Ses03M_impro04_F023.wav",
+    "length": 6.5199375,
+    "emo": "neu",
+    "text": "Well... If you need something, I mean, you're just going to---can get a temporary thing right now and then look for something--"
+  },
+  "Ses03M_script01_3_M029": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_M029.wav",
+    "length": 2.507875,
+    "emo": "sad",
+    "text": "Just about all."
+  },
+  "Ses03M_script03_2_M038": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M038.wav",
+    "length": 2.6615625,
+    "emo": "ang",
+    "text": "No I'll do no such thing."
+  },
+  "Ses02M_impro07_M006": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro07/Ses02M_impro07_M006.wav",
+    "length": 2.4690625,
+    "emo": "hap",
+    "text": "but big packet, big packet is nice"
+  },
+  "Ses01F_impro04_F033": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro04/Ses01F_impro04_F033.wav",
+    "length": 5.845,
+    "emo": "ang",
+    "text": "I can not-- you are not here by choice.  Nobody would ride this bus by choice."
+  },
+  "Ses03F_impro04_M013": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro04/Ses03F_impro04_M013.wav",
+    "length": 3.4321875,
+    "emo": "neu",
+    "text": "See? So you can't just quit now."
+  },
+  "Ses05M_impro05_M009": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro05/Ses05M_impro05_M009.wav",
+    "length": 5.5699375,
+    "emo": "neu",
+    "text": "You know, this is actually, I mean it's -- it's a really important piece of luggage."
+  },
+  "Ses05F_impro05_F019": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_F019.wav",
+    "length": 4.86,
+    "emo": "ang",
+    "text": "No, but I mean like why can't- why can't you find it?  Where did it go?  Who lost it?"
+  },
+  "Ses02F_impro03_M026": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro03/Ses02F_impro03_M026.wav",
+    "length": 2.7513125,
+    "emo": "hap",
+    "text": "It'll be good.  Wow, that's great."
+  },
+  "Ses03M_impro05a_F001": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05a/Ses03M_impro05a_F001.wav",
+    "length": 3.37,
+    "emo": "neu",
+    "text": "Well, let me just check on that for you.  Where are you coming--?"
+  },
+  "Ses04F_script02_2_M000": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_M000.wav",
+    "length": 2.9499375,
+    "emo": "neu",
+    "text": "Well, so what do you think?"
+  },
+  "Ses05F_impro04_M036": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M036.wav",
+    "length": 1.66,
+    "emo": "neu",
+    "text": "Of course."
+  },
+  "Ses05F_impro04_F041": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_F041.wav",
+    "length": 2.55,
+    "emo": "neu",
+    "text": "Bartending, catering."
+  },
+  "Ses05F_impro02_M000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro02/Ses05F_impro02_M000.wav",
+    "length": 2.8281875,
+    "emo": "neu",
+    "text": "What is it?"
+  },
+  "Ses03M_script01_1_M003": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_1/Ses03M_script01_1_M003.wav",
+    "length": 5.95875,
+    "emo": "sad",
+    "text": "I don't know. But after it cracked he ran back into the house and he cried in the kitchen."
+  },
+  "Ses04F_impro07_F039": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F039.wav",
+    "length": 3.15,
+    "emo": "hap",
+    "text": "Yeah.  Totally."
+  },
+  "Ses03M_script03_2_M014": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M014.wav",
+    "length": 4.9506875,
+    "emo": "ang",
+    "text": "You needn't be so grand just because you don't happen to want any yourself at the moment."
+  },
+  "Ses05F_script03_1_M018": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_1/Ses05F_script03_1_M018.wav",
+    "length": 2.18,
+    "emo": "hap",
+    "text": "Yes, yes, with all his might."
+  },
+  "Ses05F_impro04_M033": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M033.wav",
+    "length": 3.4,
+    "emo": "neu",
+    "text": "Do they give you any specifics as to why they didn't go with you?"
+  },
+  "Ses01F_script03_2_M011": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_M011.wav",
+    "length": 3.5364375,
+    "emo": "neu",
+    "text": "No particular reason.  Anyhow, they are very small ones."
+  },
+  "Ses02M_script03_2_M047": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_M047.wav",
+    "length": 9.75075,
+    "emo": "ang",
+    "text": "I wouldn't marry you again if you came to me on your bended knees. You're a evil minded little vampire. I hope to God I never see you again as long as I live."
+  },
+  "Ses02M_impro05_M013": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro05/Ses02M_impro05_M013.wav",
+    "length": 7.01475,
+    "emo": "ang",
+    "text": "But we have the tags on. I mean like it wouldn't you know, if it got stuck somewhere it's like well this is nobodies bag I mean maybe you know look on the tag and"
+  },
+  "Ses01M_impro06_F028": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro06/Ses01M_impro06_F028.wav",
+    "length": 3.5921875,
+    "emo": "neu",
+    "text": "Are there things you wish you'd done differently?"
+  },
+  "Ses03M_impro06_F000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F000.wav",
+    "length": 5.0378125,
+    "emo": "sad",
+    "text": "How's it going?  How are you feeling?"
+  },
+  "Ses02F_script01_3_F025": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_F025.wav",
+    "length": 1.7741875,
+    "emo": "sad",
+    "text": "Oh, gee."
+  },
+  "Ses05M_script02_1_M003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_1/Ses05M_script02_1_M003.wav",
+    "length": 3.5699375,
+    "emo": "hap",
+    "text": "The flashlight.  The silver one.  There's only one, isn't there?  Stupid."
+  },
+  "Ses04F_script02_2_M023": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_M023.wav",
+    "length": 1.9295625,
+    "emo": "neu",
+    "text": "You want me to get some champagne?"
+  },
+  "Ses01M_script02_1_M046": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_1/Ses01M_script02_1_M046.wav",
+    "length": 8.1975,
+    "emo": "hap",
+    "text": "It's crazy.  Look at this, I'm giving myself goose bumps, the hairs are standing up on my arm."
+  },
+  "Ses03F_impro06_F010": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro06/Ses03F_impro06_F010.wav",
+    "length": 10.01275,
+    "emo": "sad",
+    "text": "It's weird, I think. I feel so alone, you know? What am I going to do now? Now that he's gone."
+  },
+  "Ses02M_script02_1_F001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_1/Ses02M_script02_1_F001.wav",
+    "length": 2.09,
+    "emo": "neu",
+    "text": "What flashlight?"
+  },
+  "Ses03F_impro04_M018": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro04/Ses03F_impro04_M018.wav",
+    "length": 4.395,
+    "emo": "neu",
+    "text": "Go back to school. You know? Another three more years, get your master's."
+  },
+  "Ses05M_impro07_M014": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro07/Ses05M_impro07_M014.wav",
+    "length": 3.73,
+    "emo": "hap",
+    "text": "Perfect!  Oh, my God.  Are you staying, are you going to live on campus?"
+  },
+  "Ses03M_impro08b_M014": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_M014.wav",
+    "length": 7.28,
+    "emo": "neu",
+    "text": "Tell them that.  You can go in, get a brand new phone, they'll hook you up with service even give you a free three months--"
+  },
+  "Ses05M_script01_3_M039": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_3/Ses05M_script01_3_M039.wav",
+    "length": 2.28,
+    "emo": "sad",
+    "text": "And I guess that included you."
+  },
+  "Ses01F_script02_2_M024": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_2/Ses01F_script02_2_M024.wav",
+    "length": 1.8299375,
+    "emo": "hap",
+    "text": "Do you want to take off your shoes?"
+  },
+  "Ses03F_impro02_M016": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_M016.wav",
+    "length": 3.1324375,
+    "emo": "sad",
+    "text": "You can't leave your daughter alone like this."
+  },
+  "Ses02F_script03_1_M020": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_M020.wav",
+    "length": 5.49,
+    "emo": "hap",
+    "text": "No. No, it isn't.  Death is very laughable.  Such a cunning little mystery.  All done with mirrors."
+  },
+  "Ses03M_impro03_M020": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro03/Ses03M_impro03_M020.wav",
+    "length": 7.9119375,
+    "emo": "hap",
+    "text": "Chucky...I don't know.  I don't know. Anyways, I pull her up and I go, I go Sarah"
+  },
+  "Ses05M_impro05_F008": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro05/Ses05M_impro05_F008.wav",
+    "length": 1.2399375,
+    "emo": "neu",
+    "text": "Okay."
+  },
+  "Ses04F_script02_2_F033": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_F033.wav",
+    "length": 3.6899375,
+    "emo": "ang",
+    "text": "This what, what is this?  This isn't even anything."
+  },
+  "Ses03M_impro08b_M009": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_M009.wav",
+    "length": 8.0,
+    "emo": "neu",
+    "text": "you might have an older phone where we would use sim cards but probably not."
+  },
+  "Ses04M_script03_2_F041": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F041.wav",
+    "length": 3.191875,
+    "emo": "ang",
+    "text": "Go away.  Go away.  I hate you."
+  },
+  "Ses02F_impro06_M006": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro06/Ses02F_impro06_M006.wav",
+    "length": 2.3843125,
+    "emo": "neu",
+    "text": "It's okay."
+  },
+  "Ses04M_script03_1_M007": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_1/Ses04M_script03_1_M007.wav",
+    "length": 2.4799375,
+    "emo": "hap",
+    "text": "With the mo- with the most perfect poise?"
+  },
+  "Ses05F_script02_2_F019": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script02_2/Ses05F_script02_2_F019.wav",
+    "length": 1.771,
+    "emo": "sad",
+    "text": "No."
+  },
+  "Ses02M_script03_2_M042": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_M042.wav",
+    "length": 6.476375,
+    "emo": "ang",
+    "text": "You're a vile tempered, loose living, wicked little beast and I hope I never see you again as long as I live."
+  },
+  "Ses05F_impro04_F017": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_F017.wav",
+    "length": 5.85,
+    "emo": "sad",
+    "text": "I don't know. Maybe I can take out a loan. I just- I need prospects and I don't feel like I have any."
+  },
+  "Ses01M_script03_2_F041": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_F041.wav",
+    "length": 18.92,
+    "emo": "ang",
+    "text": "Oh yes I am...Oh yes I am. Let go of me. You let go. You...urgh...You're a cruel friend. I loathe and I hate you. Marry you again...Ha...Never, never, never, never. I hope you die in torment. You beast."
+  },
+  "Ses05M_impro02_M027": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro02/Ses05M_impro02_M027.wav",
+    "length": 1.92,
+    "emo": "sad",
+    "text": "I'll miss you, baby."
+  },
+  "Ses05F_script03_1_F033": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_1/Ses05F_script03_1_F033.wav",
+    "length": 1.7346875,
+    "emo": "neu",
+    "text": "You knew there was nothing."
+  },
+  "Ses01F_impro03_M003": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro03/Ses01F_impro03_M003.wav",
+    "length": 3.9775,
+    "emo": "hap",
+    "text": "Who did you marry?"
+  },
+  "Ses05M_impro03_M023": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro03/Ses05M_impro03_M023.wav",
+    "length": 1.6,
+    "emo": "hap",
+    "text": "She's the one."
+  },
+  "Ses02M_script01_3_M010": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script01_3/Ses02M_script01_3_M010.wav",
+    "length": 10.137,
+    "emo": "hap",
+    "text": "I'm embarrassing you and I didn't want to tell it to you here.  I wanted some place we'd never been before.  A place where we'd be brand new to each other."
+  },
+  "Ses01F_script01_3_F022": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_F022.wav",
+    "length": 5.37,
+    "emo": "neu",
+    "text": "Like Larry's brother.  Do it like you, Chris."
+  },
+  "Ses01F_script03_2_F000": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_F000.wav",
+    "length": 5.25,
+    "emo": "hap",
+    "text": "And very much sillier."
+  },
+  "Ses01F_script01_1_M017": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_1/Ses01F_script01_1_M017.wav",
+    "length": 2.9366875,
+    "emo": "neu",
+    "text": "So all right then, I'll just go ahead with it?"
+  },
+  "Ses04F_script02_2_F024": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_F024.wav",
+    "length": 5.5899375,
+    "emo": "sad",
+    "text": "I would rather not remember some things.  I would rather not hope for some things."
+  },
+  "Ses01M_script01_1_M040": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_1/Ses01M_script01_1_M040.wav",
+    "length": 2.1525,
+    "emo": "sad",
+    "text": "Then help me stay."
+  },
+  "Ses02M_impro07_M018": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro07/Ses02M_impro07_M018.wav",
+    "length": 1.0099375,
+    "emo": "hap",
+    "text": "What?"
+  },
+  "Ses01M_script03_1_F038": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_1/Ses01M_script03_1_F038.wav",
+    "length": 2.7699375,
+    "emo": "hap",
+    "text": "Utterly, utterly ridiculous."
+  },
+  "Ses03M_impro06_M005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_M005.wav",
+    "length": 4.4050625,
+    "emo": "sad",
+    "text": "no one else would talk to me but he would."
+  },
+  "Ses01F_impro04_M005": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro04/Ses01F_impro04_M005.wav",
+    "length": 3.34,
+    "emo": "neu",
+    "text": "He's like a manager for a theatre."
+  },
+  "Ses01F_script01_3_M005": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_M005.wav",
+    "length": 9.28,
+    "emo": "neu",
+    "text": "Well I was kind of planning of sneaking up on you over the course of a week or so.  They just take it for granted that we're all set."
+  },
+  "Ses03F_impro07_M011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_M011.wav",
+    "length": 1.762625,
+    "emo": "hap",
+    "text": "Good for you."
+  },
+  "Ses05F_impro05_M000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_M000.wav",
+    "length": 2.09,
+    "emo": "neu",
+    "text": "Okay, what flight were you on?"
+  },
+  "Ses04F_impro07_F044": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F044.wav",
+    "length": 1.4499375,
+    "emo": "hap",
+    "text": "party."
+  },
+  "Ses05M_script03_2_F035": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_F035.wav",
+    "length": 3.0099375,
+    "emo": "ang",
+    "text": "You are far too temperamental.  Try to control yourself."
+  },
+  "Ses04F_impro05_F008": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro05/Ses04F_impro05_F008.wav",
+    "length": 3.3199375,
+    "emo": "ang",
+    "text": "No. No. I heard- I heard what you said."
+  },
+  "Ses01M_script02_2_M035": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_M035.wav",
+    "length": 14.2841875,
+    "emo": "ang",
+    "text": "You think nothing turns out how it's supposed to.  You think I had some grand idea going that four years down the line.  We would come to this beach and argue over fish?  No."
+  },
+  "Ses03F_script02_1_M041": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M041.wav",
+    "length": 9.815,
+    "emo": "hap",
+    "text": "They don't ask it a question. They just, they just, they don't know what drives them. They just turn as one and start the swim that brings them to here"
+  },
+  "Ses04F_script01_3_M028": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_3/Ses04F_script01_3_M028.wav",
+    "length": 3.6625625,
+    "emo": "sad",
+    "text": "Well I lost them."
+  },
+  "Ses02F_script01_1_F027": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_1/Ses02F_script01_1_F027.wav",
+    "length": 4.403375,
+    "emo": "neu",
+    "text": "Well, how do you know she'll marry you?  Maybe she feels the same way your father does."
+  },
+  "Ses01F_script02_2_F022": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_2/Ses01F_script02_2_F022.wav",
+    "length": 6.3749375,
+    "emo": "sad",
+    "text": "I'd rather not remember some things.  I'd rather not hope for some things."
+  },
+  "Ses03M_impro06_F007": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F007.wav",
+    "length": 6.230375,
+    "emo": "sad",
+    "text": "What happened?  What went wrong?"
+  },
+  "Ses05F_script03_2_M037": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_2/Ses05F_script03_2_M037.wav",
+    "length": 3.0799375,
+    "emo": "ang",
+    "text": "Turn it off.  It is driving me mad."
+  },
+  "Ses04M_impro03_M026": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro03/Ses04M_impro03_M026.wav",
+    "length": 1.46,
+    "emo": "hap",
+    "text": "She's okay with it."
+  },
+  "Ses04F_script03_2_F012": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_2/Ses04F_script03_2_F012.wav",
+    "length": 2.4305625,
+    "emo": "ang",
+    "text": "It's become a habit with you."
+  },
+  "Ses03F_impro03_M006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro03/Ses03F_impro03_M006.wav",
+    "length": 5.7674375,
+    "emo": "hap",
+    "text": "Yeah, The Lousy Chaperone. [LAUGHTER] Uh huh."
+  },
+  "Ses03M_impro02_M025": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_M025.wav",
+    "length": 3.3825625,
+    "emo": "sad",
+    "text": "They want me there two years but I could probably get"
+  },
+  "Ses04F_impro07_M022": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_M022.wav",
+    "length": 1.7699375,
+    "emo": "neu",
+    "text": "Uh, well-"
+  },
+  "Ses03M_script02_1_F005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_1/Ses03M_script02_1_F005.wav",
+    "length": 1.962375,
+    "emo": "neu",
+    "text": "Yes."
+  },
+  "Ses04F_script03_1_M006": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_1/Ses04F_script03_1_M006.wav",
+    "length": 3.368625,
+    "emo": "hap",
+    "text": "What shall we do if they suddenly walk in on us?"
+  },
+  "Ses04F_script01_1_M032": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_M032.wav",
+    "length": 7.2613125,
+    "emo": "sad",
+    "text": "These years when I think of someone for my wife, I think of Annie.  What do you want, a diagram?"
+  },
+  "Ses03M_impro05b_F004": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05b/Ses03M_impro05b_F004.wav",
+    "length": 1.7599375,
+    "emo": "neu",
+    "text": "Okay.  Well you um-..."
+  },
+  "Ses01M_script03_1_M012": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_1/Ses01M_script03_1_M012.wav",
+    "length": 1.822375,
+    "emo": "hap",
+    "text": "Ah...Strange..."
+  },
+  "Ses01F_script01_3_F003": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_F003.wav",
+    "length": 7.8244375,
+    "emo": "neu",
+    "text": "I'm not sorry, no. But I'm...I can't stay."
+  },
+  "Ses05F_impro08_F016": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_F016.wav",
+    "length": 15.0399375,
+    "emo": "neu",
+    "text": "So in the database, it looks as though um, there is a there is like a glitch in the transaction where it hadn't gone through before, but I do see that you paid the, what can you tell me the amount, what was the amount?"
+  },
+  "Ses01F_script02_1_M024": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_1/Ses01F_script02_1_M024.wav",
+    "length": 12.86,
+    "emo": "neu",
+    "text": "Honey, this is like a natural phenomenon. I mean... People in Kansas would have to get plane reservations and get hotel rooms to see this.  It's just forty minutes away for us; it's too good to pass up."
+  },
+  "Ses04F_impro03_F044": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro03/Ses04F_impro03_F044.wav",
+    "length": 2.75,
+    "emo": "hap",
+    "text": "You don't look like you're going to faint."
+  },
+  "Ses05M_impro07_M018": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro07/Ses05M_impro07_M018.wav",
+    "length": 5.0099375,
+    "emo": "hap",
+    "text": "I just want to be really close to things, you know.  I know it's not exactly the best neighborhood in the entire world. But uh-"
+  },
+  "Ses05F_impro05_F021": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_F021.wav",
+    "length": 13.7699375,
+    "emo": "ang",
+    "text": "Yeah, meaning I didn't die in a fiery plane crash.  How convenient, but um- I paid two thousand dollar to ride your airline, and I would really appreciate getting my bags there to my destination in one place."
+  },
+  "Ses04M_impro01_M000": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro01/Ses04M_impro01_M000.wav",
+    "length": 11.33,
+    "emo": "neu",
+    "text": "Yeah, hi.  Um, look, I -- all I'm trying to do right now is renew my license plate.  That's all.  I just need to get one of those little stickers."
+  },
+  "Ses03F_script02_1_M013": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M013.wav",
+    "length": 5.2445,
+    "emo": "hap",
+    "text": "We should have brought the blanket. Oh, why didn't we bring the blanket? Our blanket."
+  },
+  "Ses01M_script02_2_M025": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_M025.wav",
+    "length": 4.307375,
+    "emo": "neu",
+    "text": "Oh right sure, of course."
+  },
+  "Ses05F_impro07_M029": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_M029.wav",
+    "length": 5.6899375,
+    "emo": "hap",
+    "text": "living near the U.S.C. campus by myself, not going to school there. just really pathetic and sad."
+  },
+  "Ses01F_script02_2_F043": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_2/Ses01F_script02_2_F043.wav",
+    "length": 3.8349375,
+    "emo": "hap",
+    "text": "Augie, you bought refreshments."
+  },
+  "Ses05M_impro01_F003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro01/Ses05M_impro01_F003.wav",
+    "length": 2.8,
+    "emo": "neu",
+    "text": "Yeah.  So, I can't -- I can't do anything-"
+  },
+  "Ses03F_impro02_F023": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F023.wav",
+    "length": 2.3274375,
+    "emo": "sad",
+    "text": "Babe, I love you."
+  },
+  "Ses02M_impro01_F004": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro01/Ses02M_impro01_F004.wav",
+    "length": 1.6419375,
+    "emo": "neu",
+    "text": "Well"
+  },
+  "Ses02F_impro02_F004": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro02/Ses02F_impro02_F004.wav",
+    "length": 12.1753125,
+    "emo": "sad",
+    "text": "Well, we can do the best we can and-and, with um, you know like wireless internet these days--I think that we could-- Talk every once in awhile."
+  },
+  "Ses03F_impro07_F032": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_F032.wav",
+    "length": 6.196625,
+    "emo": "hap",
+    "text": "[LAUGHTER] Hello? I am not."
+  },
+  "Ses02F_script01_3_M034": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_M034.wav",
+    "length": 9.8999375,
+    "emo": "sad",
+    "text": "Because otherwise all you have is really loot and there's blood on it.  And I didn't want to take any of it.  And I guess that included you."
+  },
+  "Ses02F_impro08_F001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro08/Ses02F_impro08_F001.wav",
+    "length": 1.714125,
+    "emo": "neu",
+    "text": "All right, sir."
+  },
+  "Ses02F_script01_3_M022": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_M022.wav",
+    "length": 2.33,
+    "emo": "sad",
+    "text": "I don't know how to start."
+  },
+  "Ses02M_impro06_F002": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_F002.wav",
+    "length": 4.09,
+    "emo": "sad",
+    "text": "It doesn't make any easier, yes."
+  },
+  "Ses01M_impro02_F013": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro02/Ses01M_impro02_F013.wav",
+    "length": 4.0599375,
+    "emo": "sad",
+    "text": "You're going with the same ones?"
+  },
+  "Ses01M_script01_1_F031": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_1/Ses01M_script01_1_F031.wav",
+    "length": 9.17,
+    "emo": "sad",
+    "text": "He thinks he's coming back, Chris.  You marry that girl you're pronouncing him dead."
+  },
+  "Ses03F_impro03_F011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro03/Ses03F_impro03_F011.wav",
+    "length": 9.3005625,
+    "emo": "hap",
+    "text": "he asked me to marry him, like- onstage. I was like, I couldn't believe--and I had to walk up there and I was, like I think I tripped or something."
+  },
+  "Ses05F_impro06_F003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_F003.wav",
+    "length": 4.4499375,
+    "emo": "sad",
+    "text": "Yeah.  We were.  Pretty close."
+  },
+  "Ses01M_impro04_F020": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro04/Ses01M_impro04_F020.wav",
+    "length": 2.38,
+    "emo": "neu",
+    "text": "...and you're always right."
+  },
+  "Ses02M_impro08_M026": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro08/Ses02M_impro08_M026.wav",
+    "length": 3.74425,
+    "emo": "neu",
+    "text": "Okay. All right. Then we'll get it sent out there. And"
+  },
+  "Ses03F_impro02_F011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F011.wav",
+    "length": 4.4025,
+    "emo": "sad",
+    "text": "It's going- It's going to be probably in about three weeks."
+  },
+  "Ses02M_impro05_F002": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro05/Ses02M_impro05_F002.wav",
+    "length": 1.75,
+    "emo": "neu",
+    "text": "Okay. Well, um- the f."
+  },
+  "Ses03M_script01_3_F019": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_F019.wav",
+    "length": 2.333375,
+    "emo": "hap",
+    "text": "I'll never forgive you for that."
+  },
+  "Ses03F_script02_2_M016": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_2/Ses03F_script02_2_M016.wav",
+    "length": 3.6843125,
+    "emo": "neu",
+    "text": "Wait a minute. I got it."
+  },
+  "Ses01F_impro06_F019": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro06/Ses01F_impro06_F019.wav",
+    "length": 1.66,
+    "emo": "neu",
+    "text": "Yeah."
+  },
+  "Ses04M_script03_2_M049": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_M049.wav",
+    "length": 2.66,
+    "emo": "ang",
+    "text": "You're a vile tempered, loosed living"
+  },
+  "Ses03M_impro07_F009": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_F009.wav",
+    "length": 6.8299375,
+    "emo": "hap",
+    "text": "Oh man I am so proud of you, that is...how did you get...I mean what did you do?  How did you find out or what...?"
+  },
+  "Ses01F_script03_1_M026": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_1/Ses01F_script03_1_M026.wav",
+    "length": 16.6299375,
+    "emo": "hap",
+    "text": "Oh See, I don't care what you do, see.  You can paint yourself green and run naked through the Place Vendome and run off with all of the men of the world.  I shan't say a word, just as long as you love me best."
+  },
+  "Ses02M_script02_2_M002": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_2/Ses02M_script02_2_M002.wav",
+    "length": 4.7799375,
+    "emo": "neu",
+    "text": "Certainly it's not. Slightly exaggerated scientific fact."
+  },
+  "Ses02M_impro03_M024": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro03/Ses02M_impro03_M024.wav",
+    "length": 6.6710625,
+    "emo": "hap",
+    "text": "Yea, yea, I'm not too sure where yet I guess you know, I kind of got to figure some stuff out here first"
+  },
+  "Ses02M_impro07_F028": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro07/Ses02M_impro07_F028.wav",
+    "length": 4.8020625,
+    "emo": "hap",
+    "text": "and we'll explore and you going to have such a good time, you're going to fit in so well, it's going to be awesome"
+  },
+  "Ses02F_impro01_F019": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro01/Ses02F_impro01_F019.wav",
+    "length": 5.21575,
+    "emo": "ang",
+    "text": "Yeah, but your birth certificate--I mean, who carries around their birth certificate?  Nobody does that."
+  },
+  "Ses04M_script01_1_F019": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_F019.wav",
+    "length": 3.6310625,
+    "emo": "neu",
+    "text": "Well you want to make sure your father isn't going to have --"
+  },
+  "Ses03M_script01_3_M019": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_M019.wav",
+    "length": 7.38975,
+    "emo": "hap",
+    "text": "Oh God.  Annie, I kissed Annie.  I kissed Annie."
+  },
+  "Ses04F_script01_3_M036": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_3/Ses04F_script01_3_M036.wav",
+    "length": 4.149875,
+    "emo": "sad",
+    "text": "And then I came home and it was amazing."
+  },
+  "Ses03F_script01_3_M006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_3/Ses03F_script01_3_M006.wav",
+    "length": 14.5355625,
+    "emo": "hap",
+    "text": "Oh look, um, well, the thing is, I was planning on, planning on sort of sneaking up on you over a week or so, and they-they take it for granted we're all set."
+  },
+  "Ses05F_script03_1_M030": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_1/Ses05F_script03_1_M030.wav",
+    "length": 2.15,
+    "emo": "neu",
+    "text": "Oh, I didn't hit you very hard."
+  },
+  "Ses03M_script03_2_M010": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M010.wav",
+    "length": 2.3415625,
+    "emo": "neu",
+    "text": "I'll have a little I think."
+  },
+  "Ses03F_script03_2_F040": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_F040.wav",
+    "length": 4.4,
+    "emo": "ang",
+    "text": "This is the end. Do you hear? The end. Now and forever."
+  },
+  "Ses05M_impro06_M013": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro06/Ses05M_impro06_M013.wav",
+    "length": 10.0799375,
+    "emo": "sad",
+    "text": "and it just gets worse.  It just gets worse, everything is bad all the time; people die, your friends die, family dies, your best friends die. it's-"
+  },
+  "Ses04F_script02_2_F041": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_F041.wav",
+    "length": 3.6813125,
+    "emo": "sad",
+    "text": "somebody who knew how to enjoy herself and didn't take everything so hard."
+  },
+  "Ses04M_script03_1_F025": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_1/Ses04M_script03_1_F025.wav",
+    "length": 2.54,
+    "emo": "hap",
+    "text": "It went on intermittently for days."
+  },
+  "Ses03F_impro06_M011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro06/Ses03F_impro06_M011.wav",
+    "length": 5.629375,
+    "emo": "sad",
+    "text": "Yeah, but you were there all the hospital days. By his bed-"
+  },
+  "Ses05F_impro05_M006": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_M006.wav",
+    "length": 4.8633125,
+    "emo": "neu",
+    "text": "But uh- I don't see it here in the airport yet. uh"
+  },
+  "Ses01M_impro01_F000": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro01/Ses01M_impro01_F000.wav",
+    "length": 1.6899375,
+    "emo": "ang",
+    "text": "Next."
+  },
+  "Ses03M_impro03_F026": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro03/Ses03M_impro03_F026.wav",
+    "length": 3.7161875,
+    "emo": "hap",
+    "text": "Sure?  Who says sure?  You say yes...I don't like--"
+  },
+  "Ses01F_script03_2_M037": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_M037.wav",
+    "length": 8.9725,
+    "emo": "ang",
+    "text": "You are a vile, ill-tempered, loose living, wicked little beast and I never want to see you again as long as I live."
+  },
+  "Ses02M_impro08_F019": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro08/Ses02M_impro08_F019.wav",
+    "length": 3.9619375,
+    "emo": "neu",
+    "text": "I did buy one thing on ebay I don't know that might-"
+  },
+  "Ses03F_script03_2_M000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_M000.wav",
+    "length": 5.084375,
+    "emo": "ang",
+    "text": "As a matter of fact, the real cause of that row was Peter Burden."
+  },
+  "Ses05F_script03_2_M008": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_2/Ses05F_script03_2_M008.wav",
+    "length": 2.74,
+    "emo": "ang",
+    "text": "Well, that's a nice point of view I must say."
+  },
+  "Ses03M_impro01_M004": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro01/Ses03M_impro01_M004.wav",
+    "length": 3.317625,
+    "emo": "ang",
+    "text": "What are you talking about?  It says fill out that part."
+  },
+  "Ses03M_script02_2_F041": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_2/Ses03M_script02_2_F041.wav",
+    "length": 8.474625,
+    "emo": "sad",
+    "text": "Well, I guess this is the wrong spot for the right people."
+  },
+  "Ses05F_impro08_M020": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_M020.wav",
+    "length": 2.93,
+    "emo": "neu",
+    "text": "Are you taking the late fee off of my account then?"
+  },
+  "Ses05F_script02_1_M020": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script02_1/Ses05F_script02_1_M020.wav",
+    "length": 12.3869375,
+    "emo": "hap",
+    "text": "Yeah but that moment on the beach is the highlight of their little lives, all that flopping around is laying eggs or what you- mating or spawning or something like that."
+  },
+  "Ses04M_impro06_F002": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro06/Ses04M_impro06_F002.wav",
+    "length": 5.28,
+    "emo": "sad",
+    "text": "I know- I know there's nothing I can say that will really help, but--"
+  },
+  "Ses03M_impro02_F031": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_F031.wav",
+    "length": 3.084125,
+    "emo": "sad",
+    "text": "It's over."
+  },
+  "Ses03F_script02_1_M014": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M014.wav",
+    "length": 9.0136875,
+    "emo": "hap",
+    "text": "You know what would be good right now? A six-pack. Ah, I can't believe I forgot a six-pack. A six-pack would be just the ticket right about now."
+  },
+  "Ses04F_script02_1_F017": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_1/Ses04F_script02_1_F017.wav",
+    "length": 2.00125,
+    "emo": "ang",
+    "text": "Yes."
+  },
+  "Ses05M_impro07_M039": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro07/Ses05M_impro07_M039.wav",
+    "length": 8.3799375,
+    "emo": "hap",
+    "text": "And yeah, well, I mean, basically I just applied for any and every possible scholarship and grant that could come by, so I can go."
+  },
+  "Ses04M_script02_2_M037": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_2/Ses04M_script02_2_M037.wav",
+    "length": 3.964375,
+    "emo": "sad",
+    "text": "No, I know.  But still.  I know I don't make you happy."
+  },
+  "Ses02F_impro05_M001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro05/Ses02F_impro05_M001.wav",
+    "length": 8.5799375,
+    "emo": "neu",
+    "text": "Okay.  Um, well, unfortunately yeah there was a some- some problems with the--"
+  },
+  "Ses02F_impro03_F021": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro03/Ses02F_impro03_F021.wav",
+    "length": 11.08525,
+    "emo": "hap",
+    "text": "Yeah, I don't know-[LAUGHTER]-I mean--I can't even--the whole idea of like living--spending my whole life with somebody--that's crazy"
+  },
+  "Ses05M_impro05_F017": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro05/Ses05M_impro05_F017.wav",
+    "length": 5.79,
+    "emo": "neu",
+    "text": "Uh- Actually, I don't know that that's legal. Um- it is the issue"
+  },
+  "Ses02M_script03_2_M000": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_M000.wav",
+    "length": 3.8894375,
+    "emo": "neu",
+    "text": "As a matter of fact, the real cause of that row was Peter Burden."
+  },
+  "Ses04M_script02_1_M008": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_1/Ses04M_script02_1_M008.wav",
+    "length": 4.68,
+    "emo": "hap",
+    "text": "I wonder, do they always run during a full moon? I can't remember if it was full last year.  Remember?"
+  },
+  "Ses02F_script01_3_F016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_3/Ses02F_script01_3_F016.wav",
+    "length": 8.6,
+    "emo": "hap",
+    "text": "I will never forgive you.  Why did you wait all these years?  All I did was sit and wonder if I was crazy for thinking of you."
+  },
+  "Ses02M_script01_2_F002": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script01_2/Ses02M_script01_2_F002.wav",
+    "length": 3.17,
+    "emo": "ang",
+    "text": "Nobody comes seven hundred miles just to see."
+  },
+  "Ses03F_impro05_F011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro05/Ses03F_impro05_F011.wav",
+    "length": 5.69075,
+    "emo": "ang",
+    "text": "What? There- There's hundreds of thousands of dollars worth of stuff in there."
+  },
+  "Ses05M_script01_1b_M001": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_1b/Ses05M_script01_1b_M001.wav",
+    "length": 2.36,
+    "emo": "sad",
+    "text": "He was out here when it broke."
+  },
+  "Ses05F_impro07_M014": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_M014.wav",
+    "length": 4.1599375,
+    "emo": "hap",
+    "text": "Oh, I bet you're going to love it too.  You always wanted to go to U.S.C.."
+  },
+  "Ses04F_impro04_M014": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M014.wav",
+    "length": 2.0299375,
+    "emo": "neu",
+    "text": "Yeah, I understand, but-"
+  },
+  "Ses03F_script03_2_M014": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_M014.wav",
+    "length": 4.87,
+    "emo": "ang",
+    "text": "You needn't be so grand just because you don't happen to want some yourself at the moment."
+  },
+  "Ses01M_impro05_F032": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro05/Ses01M_impro05_F032.wav",
+    "length": 2.4099375,
+    "emo": "neu",
+    "text": "That's not - no."
+  },
+  "Ses03M_impro06_M020": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_M020.wav",
+    "length": 3.9913125,
+    "emo": "sad",
+    "text": "and then something like this happens you know?"
+  },
+  "Ses05M_impro03_M011": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro03/Ses05M_impro03_M011.wav",
+    "length": 13.7530625,
+    "emo": "hap",
+    "text": "And she's like- she feels it you know and she doesn't know what it is.  And she you know helps me get out and I won't let go of her hand.  And she's like, what are you doing?  I and said, You saved my life, now will you marry me?"
+  },
+  "Ses05M_impro07_F021": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro07/Ses05M_impro07_F021.wav",
+    "length": 1.8899375,
+    "emo": "hap",
+    "text": "Right, Exactly."
+  },
+  "Ses05M_script01_3_F013": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_3/Ses05M_script01_3_F013.wav",
+    "length": 7.4,
+    "emo": "hap",
+    "text": "Well, I mean, until then you never wrote and when you did, what did you say?  I mean, you sure can be ambiguous."
+  },
+  "Ses01M_script01_1_M002": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_1/Ses01M_script01_1_M002.wav",
+    "length": 6.135,
+    "emo": "neu",
+    "text": "I was out here at four this morning I heard a crack and I looked out the window and he was standing right over there."
+  },
+  "Ses01F_impro06_F013": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro06/Ses01F_impro06_F013.wav",
+    "length": 1.5325,
+    "emo": "sad",
+    "text": "I don't know."
+  },
+  "Ses04F_impro04_F017": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_F017.wav",
+    "length": 3.6399375,
+    "emo": "ang",
+    "text": "Okey So I'm doing something wrong.  What am I doing wrong?"
+  },
+  "Ses04M_script03_2_M033": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_M033.wav",
+    "length": 3.3899375,
+    "emo": "ang",
+    "text": "I suppose you let him kiss you a good deal more then, hmm?"
+  },
+  "Ses03M_impro05b_F029": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05b/Ses03M_impro05b_F029.wav",
+    "length": 2.8199375,
+    "emo": "neu",
+    "text": "Uh--"
+  },
+  "Ses05M_script02_2_F013": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_2/Ses05M_script02_2_F013.wav",
+    "length": 31.91,
+    "emo": "sad",
+    "text": "Do you remember the first time that we came to see the grunion?  It was about four years ago right after we got married.  We thought I was pregnant.  We had a bottle of champagne and no glasses.  You asked me to dance.  We took off our shoes.  And while we were dancing you said the most intimate things to me right in my ear so I could feel them as much as hear them."
+  },
+  "Ses04F_impro07_F065": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F065.wav",
+    "length": 1.14,
+    "emo": "hap",
+    "text": "[LAUGHTER]."
+  },
+  "Ses02M_script03_2_M033": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_M033.wav",
+    "length": 2.134625,
+    "emo": "neu",
+    "text": "Better turn that off I think."
+  },
+  "Ses01F_impro03_F010": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro03/Ses01F_impro03_F010.wav",
+    "length": 3.2049375,
+    "emo": "hap",
+    "text": "Oh.  I hadn't even thought about that."
+  },
+  "Ses04M_script03_2_F030": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F030.wav",
+    "length": 2.85,
+    "emo": "ang",
+    "text": "Mind your own business."
+  },
+  "Ses04M_script03_2_F034": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F034.wav",
+    "length": 1.9599375,
+    "emo": "ang",
+    "text": "Oh, shut up."
+  },
+  "Ses02M_script01_3_M015": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script01_3/Ses02M_script01_3_M015.wav",
+    "length": 2.832,
+    "emo": "hap",
+    "text": "Ann, why didn't you let me know?"
+  },
+  "Ses04F_impro04_M022": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M022.wav",
+    "length": 6.0299375,
+    "emo": "neu",
+    "text": "or some- some large percent of- of success."
+  },
+  "Ses05F_impro03_M058": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro03/Ses05F_impro03_M058.wav",
+    "length": 1.27,
+    "emo": "hap",
+    "text": "yeah."
+  },
+  "Ses03F_impro03_M015": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro03/Ses03F_impro03_M015.wav",
+    "length": 4.8793125,
+    "emo": "hap",
+    "text": "No, you deserve to cry. I mean, tears of happiness."
+  },
+  "Ses04M_script01_1_M021": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_M021.wav",
+    "length": 3.734625,
+    "emo": "ang",
+    "text": "Well, then you know it's not only my business."
+  },
+  "Ses04F_impro04_M020": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M020.wav",
+    "length": 4.1099375,
+    "emo": "neu",
+    "text": "and I want- I mean you know you've got to, like, do your hair.  I mean- I don't know, it's like,"
+  },
+  "Ses05F_impro04_M016": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M016.wav",
+    "length": 6.17,
+    "emo": "neu",
+    "text": "Well, just don't give up. And there's- you know, You never know, something might be around the corner tomorrow."
+  },
+  "Ses05F_script03_1_M026": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_1/Ses05F_script03_1_M026.wav",
+    "length": 2.62,
+    "emo": "hap",
+    "text": "Horrible thing, I hate it."
+  },
+  "Ses04F_impro04_M023": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M023.wav",
+    "length": 6.7699375,
+    "emo": "neu",
+    "text": "Because I don't know I mean just, you know, just keep- keep- keep at it.  Keep trying.  Go-"
+  },
+  "Ses02F_impro06_F009": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro06/Ses02F_impro06_F009.wav",
+    "length": 2.1099375,
+    "emo": "sad",
+    "text": "Nobody's ever gonna forget him."
+  },
+  "Ses04M_impro03_M024": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro03/Ses04M_impro03_M024.wav",
+    "length": 17.2236875,
+    "emo": "hap",
+    "text": "But, you know, it's like I really love her and I really just -- I can't imagine spending my life with anybody else but her.  So, you know, it's like I know that's the right thing.  And if you have to, you know, if you have to question that, you know, don't- don't do it.  So we're going to do it."
+  },
+  "Ses02F_script01_1_M013": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_1/Ses02F_script01_1_M013.wav",
+    "length": 5.09,
+    "emo": "ang",
+    "text": "For God sakes, it's been three years.  Nobody comes back after three years.  It's insane."
+  },
+  "Ses03F_impro07_F027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_F027.wav",
+    "length": 2.2875,
+    "emo": "hap",
+    "text": "Are you going to come stay in my dorm with me sometime?"
+  },
+  "Ses04M_script02_2_F029": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_2/Ses04M_script02_2_F029.wav",
+    "length": 3.6499375,
+    "emo": "ang",
+    "text": "But this isn't anything like I thought anything would be like."
+  },
+  "Ses02M_script02_1_M016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_1/Ses02M_script02_1_M016.wav",
+    "length": 6.3061875,
+    "emo": "hap",
+    "text": "You think they can hear us talk or feel the vibrations in the sand when we move around?"
+  },
+  "Ses03M_impro06_F017": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F017.wav",
+    "length": 3.3585625,
+    "emo": "sad",
+    "text": "Well sure you could."
+  },
+  "Ses03F_script02_1_M042": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M042.wav",
+    "length": 9.8716875,
+    "emo": "hap",
+    "text": "where we stand for a massive celebration of sex and death. Oh, God, I'm giving myself goosebumps. Look, I'm all-all my hairs on my arms is sticking up."
+  },
+  "Ses03F_impro04_M002": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro04/Ses03F_impro04_M002.wav",
+    "length": 3.8316875,
+    "emo": "neu",
+    "text": "Russel Crowe wasn't forty until he got his big stuff."
+  },
+  "Ses01F_script01_3_F016": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_F016.wav",
+    "length": 2.988625,
+    "emo": "neu",
+    "text": "You started to write me."
+  },
+  "Ses02F_script03_2_M036": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_2/Ses02F_script03_2_M036.wav",
+    "length": 2.1099375,
+    "emo": "ang",
+    "text": "I'll do no such thing."
+  },
+  "Ses01F_script02_1_M009": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_1/Ses01F_script02_1_M009.wav",
+    "length": 1.72,
+    "emo": "neu",
+    "text": "Oh...well. Yeah, of course."
+  },
+  "Ses03F_script01_1_M036": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_1/Ses03F_script01_1_M036.wav",
+    "length": 3.8865,
+    "emo": "neu",
+    "text": "It just is. I-"
+  },
+  "Ses02F_impro07_M011": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro07/Ses02F_impro07_M011.wav",
+    "length": 1.85425,
+    "emo": "hap",
+    "text": "Wow. That's cool."
+  },
+  "Ses04F_impro06_F006": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro06/Ses04F_impro06_F006.wav",
+    "length": 2.9499375,
+    "emo": "sad",
+    "text": "It just doesn't seem fair."
+  },
+  "Ses03M_script03_2_M034": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M034.wav",
+    "length": 2.745625,
+    "emo": "ang",
+    "text": "You better turn that off."
+  },
+  "Ses05F_impro04_F042": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_F042.wav",
+    "length": 8.4199375,
+    "emo": "sad",
+    "text": "Would you be willing to make some more calls on my behalf? I won't--I won't make you look bad."
+  },
+  "Ses01F_script03_2_F002": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_F002.wav",
+    "length": 3.8199375,
+    "emo": "hap",
+    "text": "Presents?  It was only a trivial, little brooch."
+  },
+  "Ses05F_script03_2_M038": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_2/Ses05F_script03_2_M038.wav",
+    "length": 1.62,
+    "emo": "ang",
+    "text": "Turn it off."
+  },
+  "Ses04F_script02_2_M021": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_M021.wav",
+    "length": 4.2899375,
+    "emo": "hap",
+    "text": "That's it, right?  You want this to be like the other time, right.  That's it."
+  },
+  "Ses04F_script01_1_F022": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_F022.wav",
+    "length": 4.472125,
+    "emo": "ang",
+    "text": "I ignore what I got to ignore. The girl is Larry's girl."
+  },
+  "Ses05M_script03_2_M035": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M035.wav",
+    "length": 2.86,
+    "emo": "ang",
+    "text": "This is no time of the year for Tunis."
+  },
+  "Ses04F_script02_1_M009": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_1/Ses04F_script02_1_M009.wav",
+    "length": 8.40825,
+    "emo": "hap",
+    "text": "I hope the moon stays out.  I wonder do they always run during a full moon.  I can't remember if it was full last year.  Remember?"
+  },
+  "Ses02M_impro08_M009": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro08/Ses02M_impro08_M009.wav",
+    "length": 5.6795625,
+    "emo": "neu",
+    "text": "All right. Well, you know that's, that's what we have all of our protection plans for and everything like that so I mean it's"
+  },
+  "Ses01F_impro05_F017": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro05/Ses01F_impro05_F017.wav",
+    "length": 9.365,
+    "emo": "ang",
+    "text": "I don't care what you're freaking sign says.  Somebody- Somebody needs to replace everything I've got there and give me money for my inconvenience."
+  },
+  "Ses02F_impro07_F023": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro07/Ses02F_impro07_F023.wav",
+    "length": 1.6899375,
+    "emo": "hap",
+    "text": "So, um, so I don't know."
+  },
+  "Ses03F_script02_1_M022": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M022.wav",
+    "length": 2.9524375,
+    "emo": "neu",
+    "text": "I mean, don't you want to see it?"
+  },
+  "Ses04M_impro05_F013": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro05/Ses04M_impro05_F013.wav",
+    "length": 1.8299375,
+    "emo": "neu",
+    "text": "We'll cover fifty."
+  },
+  "Ses05F_impro01_M000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro01/Ses05F_impro01_M000.wav",
+    "length": 9.0,
+    "emo": "neu",
+    "text": "ahh Yeah, this is the wrong line.  I'm sorry.  You need to go back over to line two B.  That's where you should have started from."
+  },
+  "Ses02F_script03_1_F006": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_F006.wav",
+    "length": 2.27,
+    "emo": "hap",
+    "text": "Behave exquisitely."
+  },
+  "Ses03F_impro02_F005": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F005.wav",
+    "length": 1.135,
+    "emo": "hap",
+    "text": "oh."
+  },
+  "Ses03F_impro02_F027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F027.wav",
+    "length": 5.5325,
+    "emo": "sad",
+    "text": "Wait, you can write me and as you know, send me pictures."
+  },
+  "Ses01M_script03_2_M029": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_M029.wav",
+    "length": 9.2275,
+    "emo": "ang",
+    "text": "I think I told you once before that I had three minute liquor glasses the whole evening long.  A Child of two cannot get drunk on that."
+  },
+  "Ses02M_script03_1_F028": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_1/Ses02M_script03_1_F028.wav",
+    "length": 4.5655625,
+    "emo": "hap",
+    "text": "Oh it was ridiculous, completely ridiculous."
+  },
+  "Ses03M_impro07_M024": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_M024.wav",
+    "length": 2.49,
+    "emo": "hap",
+    "text": "This is going to be so great.  I have so many great ideas."
+  },
+  "Ses01M_impro05_M025": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro05/Ses01M_impro05_M025.wav",
+    "length": 6.99,
+    "emo": "ang",
+    "text": "Well you need to find it. Can I just go back there and look through the bags?  Can I just go back there and just go through maybe I'll find it."
+  },
+  "Ses03F_script03_2_M034": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_M034.wav",
+    "length": 2.6575,
+    "emo": "ang",
+    "text": "Well, I suppose the people downstairs then."
+  },
+  "Ses03M_impro02_M024": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_M024.wav",
+    "length": 3.303,
+    "emo": "sad",
+    "text": "Honey after a year I can be back."
+  },
+  "Ses04F_impro07_F060": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F060.wav",
+    "length": 1.2399375,
+    "emo": "hap",
+    "text": "Yeah."
+  },
+  "Ses01F_script01_3_M004": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_M004.wav",
+    "length": 2.3,
+    "emo": "neu",
+    "text": "What?"
+  },
+  "Ses02F_script02_1_M017": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_1/Ses02F_script02_1_M017.wav",
+    "length": 1.43,
+    "emo": "neu",
+    "text": "Do you want my jacket?"
+  },
+  "Ses05F_script03_2_F000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_2/Ses05F_script03_2_F000.wav",
+    "length": 3.303875,
+    "emo": "neu",
+    "text": "You knew there was nothing in that."
+  },
+  "Ses03M_impro05b_F015": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05b/Ses03M_impro05b_F015.wav",
+    "length": 3.0299375,
+    "emo": "neu",
+    "text": "Did you have your name tags on the luggage?"
+  },
+  "Ses05F_impro08_M025": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_M025.wav",
+    "length": 3.4099375,
+    "emo": "hap",
+    "text": "That would be wonderful, that would be great seriously."
+  },
+  "Ses05F_impro03_F056": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro03/Ses05F_impro03_F056.wav",
+    "length": 2.124875,
+    "emo": "hap",
+    "text": "You won't have trouble, You won't have trouble."
+  },
+  "Ses02F_script02_2_M000": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_2/Ses02F_script02_2_M000.wav",
+    "length": 2.0930625,
+    "emo": "hap",
+    "text": "Well, so what do you think?"
+  },
+  "Ses01F_script03_2_M027": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_M027.wav",
+    "length": 14.8399375,
+    "emo": "ang",
+    "text": "That's very interesting Amanda. How about a child of four?  Or a child of six?  Or a child of nine? We can get a good little conversation going on about this, you know, intemperate tots."
+  },
+  "Ses05F_impro05_M039": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_M039.wav",
+    "length": 6.7599375,
+    "emo": "neu",
+    "text": "Well, I have no way to give you more money.  I'm giving you as much money as I can, and figuring- as far as figuring out where you bag is-"
+  },
+  "Ses05M_script03_2_M028": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M028.wav",
+    "length": 7.9399375,
+    "emo": "ang",
+    "text": "I do believe that I have said already that I had three minuet liquor glasses of brandy in the entire evening.  A child of two couldn't get drunk of that."
+  },
+  "Ses04F_script01_3_M030": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_3/Ses04F_script01_3_M030.wav",
+    "length": 7.4484375,
+    "emo": "sad",
+    "text": "It takes a lot of time to toss that off because they weren't just men."
+  },
+  "Ses05M_impro06_F006": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro06/Ses05M_impro06_F006.wav",
+    "length": 2.1199375,
+    "emo": "sad",
+    "text": "You guys have been-"
+  },
+  "Ses03F_impro08_F012": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro08/Ses03F_impro08_F012.wav",
+    "length": 5.14,
+    "emo": "neu",
+    "text": "Okay, well, we will send you- We will reimburse you for the amount of minutes that you-"
+  },
+  "Ses03F_impro02_F024": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F024.wav",
+    "length": 4.46,
+    "emo": "sad",
+    "text": "But she has you. I mean, that's what you're there for. You're my right-hand man."
+  },
+  "Ses02M_script02_2_F038": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_2/Ses02M_script02_2_F038.wav",
+    "length": 7.3499375,
+    "emo": "sad",
+    "text": "You're the one who probably wishes he was with someone else, someone who knew how to enjoy herself and didn't take everything so hard."
+  },
+  "Ses03M_script02_2_M032": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_2/Ses03M_script02_2_M032.wav",
+    "length": 2.300875,
+    "emo": "ang",
+    "text": "Yes it is."
+  },
+  "Ses01F_script02_1_M026": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_1/Ses01F_script02_1_M026.wav",
+    "length": 5.1524375,
+    "emo": "neu",
+    "text": "This is a big night for these little guys.  It's like life's last orgy."
+  },
+  "Ses03F_script01_3_M003": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_3/Ses03F_script01_3_M003.wav",
+    "length": 2.1486875,
+    "emo": "neu",
+    "text": "Well-"
+  },
+  "Ses02M_script03_1_M031": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_1/Ses02M_script03_1_M031.wav",
+    "length": 2.5230625,
+    "emo": "hap",
+    "text": "I'll never forget his face."
+  },
+  "Ses05F_impro05_F001": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_F001.wav",
+    "length": 3.5765,
+    "emo": "neu",
+    "text": "Um-Seventeen. Coming from --"
+  },
+  "Ses04F_script03_2_F021": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_2/Ses04F_script03_2_F021.wav",
+    "length": 1.3199375,
+    "emo": "ang",
+    "text": "They sting."
+  },
+  "Ses01F_script01_3_M021": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_M021.wav",
+    "length": 3.56,
+    "emo": "sad",
+    "text": "Hey, let's drive some place.  Huh?  Let's get out of here."
+  },
+  "Ses01M_script02_2_F044": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_F044.wav",
+    "length": 4.3325,
+    "emo": "hap",
+    "text": "I guess we don't need glasses."
+  },
+  "Ses01F_impro05_F028": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro05/Ses01F_impro05_F028.wav",
+    "length": 2.1175,
+    "emo": "ang",
+    "text": "Okay.  I'll do that."
+  },
+  "Ses02F_script01_1_F037": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_1/Ses02F_script01_1_F037.wav",
+    "length": 2.5199375,
+    "emo": "ang",
+    "text": "What about the business?  What the hell is this?"
+  },
+  "Ses01M_impro05_F033": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro05/Ses01M_impro05_F033.wav",
+    "length": 1.23,
+    "emo": "neu",
+    "text": "No."
+  },
+  "Ses02M_script03_2_F007": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_F007.wav",
+    "length": 4.95675,
+    "emo": "neu",
+    "text": "Well, if you hadn't been so nosey and suspicious you never wouldn't have known anything about it."
+  },
+  "Ses05M_impro08_F028": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro08/Ses05M_impro08_F028.wav",
+    "length": 1.7099375,
+    "emo": "hap",
+    "text": "Okay.  Thanks."
+  },
+  "Ses03M_script01_3_M027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_M027.wav",
+    "length": 5.5173125,
+    "emo": "sad",
+    "text": "You remember overseas I was in command of a company?"
+  },
+  "Ses05M_script03_1_M009": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_1/Ses05M_script03_1_M009.wav",
+    "length": 3.92,
+    "emo": "hap",
+    "text": "things that ought to matter most dreadfully don't matter at all when one's happy, do they?"
+  },
+  "Ses03M_impro08a_M007": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08a/Ses03M_impro08a_M007.wav",
+    "length": 2.6816875,
+    "emo": "neu",
+    "text": "I understand--we're not-"
+  },
+  "Ses03M_impro05a_M028": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05a/Ses03M_impro05a_M028.wav",
+    "length": 3.4399375,
+    "emo": "ang",
+    "text": "Sir. Sir. Sir. Sir"
+  },
+  "Ses05F_impro06_F014": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_F014.wav",
+    "length": 5.43,
+    "emo": "sad",
+    "text": "Yeah.  And they were really supportive, like through the whole process, but-"
+  },
+  "Ses05F_impro02_F035": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro02/Ses05F_impro02_F035.wav",
+    "length": 4.2,
+    "emo": "sad",
+    "text": "\"sigh\" Three weeks."
+  },
+  "Ses02M_script03_1_M015": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_1/Ses02M_script03_1_M015.wav",
+    "length": 3.319,
+    "emo": "hap",
+    "text": "Certainly you must, we figures of fun all right."
+  },
+  "Ses04F_impro07_F032": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F032.wav",
+    "length": 2.1,
+    "emo": "hap",
+    "text": "That is why I got accepted."
+  },
+  "Ses01F_impro05_M002": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro05/Ses01F_impro05_M002.wav",
+    "length": 1.1099375,
+    "emo": "hap",
+    "text": "Uh huh."
+  },
+  "Ses05M_impro04_F001": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro04/Ses05M_impro04_F001.wav",
+    "length": 2.3499375,
+    "emo": "neu",
+    "text": "Really? It's been that long?"
+  },
+  "Ses04M_script02_2_F013": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_2/Ses04M_script02_2_F013.wav",
+    "length": 7.79,
+    "emo": "ang",
+    "text": "I did want to see it.  I always do.  I keep thinking this time will be the time, but it never is."
+  },
+  "Ses04F_script03_2_F041": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_2/Ses04F_script03_2_F041.wav",
+    "length": 1.98,
+    "emo": "ang",
+    "text": "finally and forever"
+  },
+  "Ses01F_impro02_F008": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro02/Ses01F_impro02_F008.wav",
+    "length": 3.8868125,
+    "emo": "sad",
+    "text": "Just, you know, kicking myself."
+  },
+  "Ses03M_impro03_F006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro03/Ses03M_impro03_F006.wav",
+    "length": 5.773375,
+    "emo": "hap",
+    "text": "oh, I don't remember.  Everybody Says I Love You with Drew Barrymore...no you haven't seen it?  Okay."
+  },
+  "Ses05F_script01_1_M003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script01_1/Ses05F_script01_1_M003.wav",
+    "length": 6.25,
+    "emo": "sad",
+    "text": "I don't know.  but When it cracked he ran back into the house and start to cry in the kitchen."
+  },
+  "Ses05M_impro07_F020": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro07/Ses05M_impro07_F020.wav",
+    "length": 8.6899375,
+    "emo": "neu",
+    "text": "Yeah. I think it's really also if you- if you consider yourself like, us and them, kind of thing- If you think you're part of your community then --you going to like it more"
+  },
+  "Ses05M_script03_1_F005": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_1/Ses05M_script03_1_F005.wav",
+    "length": 2.66,
+    "emo": "hap",
+    "text": "Oh, it sent shivers up my spine."
+  },
+  "Ses05F_impro04_M012": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M012.wav",
+    "length": 3.2899375,
+    "emo": "neu",
+    "text": "Well, what are you going to do about it to make it different?"
+  },
+  "Ses04F_impro07_M073": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_M073.wav",
+    "length": 1.2199375,
+    "emo": "neu",
+    "text": "Yeah."
+  },
+  "Ses04M_impro05_F003": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro05/Ses04M_impro05_F003.wav",
+    "length": 0.85,
+    "emo": "neu",
+    "text": "Right."
+  },
+  "Ses02M_script02_1_M000": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_1/Ses02M_script02_1_M000.wav",
+    "length": 3.3499375,
+    "emo": "hap",
+    "text": "What time is it? They're supposed to run around midnight."
+  },
+  "Ses02F_script03_1_M016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_M016.wav",
+    "length": 1.36,
+    "emo": "neu",
+    "text": "Who knows."
+  },
+  "Ses02M_impro05_F011": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro05/Ses02M_impro05_F011.wav",
+    "length": 11.142625,
+    "emo": "neu",
+    "text": "I understand that. Um- So I'm going to put down here that you looking for your baggage, but we actually can't, uh this bag is likely not going to show up so what we're going to do-"
+  },
+  "Ses04M_script01_2_F020": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_2/Ses04M_script01_2_F020.wav",
+    "length": 1.8999375,
+    "emo": "sad",
+    "text": "I can't help it."
+  },
+  "Ses03M_impro04_F004": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro04/Ses03M_impro04_F004.wav",
+    "length": 2.28,
+    "emo": "neu",
+    "text": "Well, okay. Well that's--"
+  },
+  "Ses05F_impro06_F023": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_F023.wav",
+    "length": 6.66,
+    "emo": "sad",
+    "text": "really hard to imagine that like you're going to continue to live, and that person's just going to have stopped."
+  },
+  "Ses01F_impro04_M025": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro04/Ses01F_impro04_M025.wav",
+    "length": 3.2,
+    "emo": "neu",
+    "text": "I am riding the bus, but by choice."
+  },
+  "Ses01M_script03_2_F035": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_F035.wav",
+    "length": 5.0099375,
+    "emo": "ang",
+    "text": "Very well if you insist on being boorish and idiotic."
+  },
+  "Ses01M_impro07_F011": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro07/Ses01M_impro07_F011.wav",
+    "length": 5.9599375,
+    "emo": "hap",
+    "text": "Yeah, that you probably. You should see one of these Victorian houses around by."
+  },
+  "Ses01F_impro01_F005": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro01/Ses01F_impro01_F005.wav",
+    "length": 4.0299375,
+    "emo": "neu",
+    "text": "Well what's the problem?  Let me change it."
+  },
+  "Ses02M_script02_2_M015": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_2/Ses02M_script02_2_M015.wav",
+    "length": 11.85,
+    "emo": "neu",
+    "text": "You were fine during the phone call from Marge, dinner was okay, doing the dishes was no problem, let's see, I took a shower, you watched the news, you said"
+  },
+  "Ses04M_script03_2_M028": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_M028.wav",
+    "length": 2.15,
+    "emo": "neu",
+    "text": "Line?"
+  },
+  "Ses03M_impro02_F026": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_F026.wav",
+    "length": 6.9044375,
+    "emo": "sad",
+    "text": "And this isn't the first time you know?  I mean you always...sending you off to different places and..."
+  },
+  "Ses02F_script02_2_M029": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_2/Ses02F_script02_2_M029.wav",
+    "length": 10.7599375,
+    "emo": "ang",
+    "text": "Well, welcome to the human race.  Do you think this is what I had in mind when I proposed?  That four years down the road, we'd be at the beach yelling at each other over fish?"
+  },
+  "Ses04F_script01_1_F042": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_F042.wav",
+    "length": 3.7001875,
+    "emo": "ang",
+    "text": "But don't think that way.  You hear me?"
+  },
+  "Ses05M_script03_1_M028": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_1/Ses05M_script03_1_M028.wav",
+    "length": 2.4699375,
+    "emo": "hap",
+    "text": "How long did that roue last?"
+  },
+  "Ses04M_impro03_M008": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro03/Ses04M_impro03_M008.wav",
+    "length": 9.74,
+    "emo": "hap",
+    "text": "Yeah. Yeah. So- I know.  I know. I know.  It's weird 'cause it's like the beginning of the rest of my life, you know."
+  },
+  "Ses03M_impro07_M002": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_M002.wav",
+    "length": 4.5799375,
+    "emo": "hap",
+    "text": "Guess who got into U.S.C.?"
+  },
+  "Ses03M_impro06_F004": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F004.wav",
+    "length": 3.382875,
+    "emo": "sad",
+    "text": "You guys were real close huh?"
+  },
+  "Ses01M_impro03_F008": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro03/Ses01M_impro03_F008.wav",
+    "length": 7.2,
+    "emo": "hap",
+    "text": "You were at a party? And she's like hey. You seem unattached she's like."
+  },
+  "Ses05M_impro06_M005": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro06/Ses05M_impro06_M005.wav",
+    "length": 6.99,
+    "emo": "sad",
+    "text": "he wanted to travel, you know.  And he's so talented.  Probably the most talented person I have ever met in my entire life."
+  },
+  "Ses03F_impro04_F024": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro04/Ses03F_impro04_F024.wav",
+    "length": 1.6225,
+    "emo": "sad",
+    "text": "Yeah"
+  },
+  "Ses04F_impro03_F048": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro03/Ses04F_impro03_F048.wav",
+    "length": 2.0599375,
+    "emo": "hap",
+    "text": "You really like"
+  },
+  "Ses02M_script03_2_F035": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_F035.wav",
+    "length": 4.178875,
+    "emo": "ang",
+    "text": "You are far too temperamental. Try to control yourself."
+  },
+  "Ses04F_script01_1_F040": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_F040.wav",
+    "length": 4.4099375,
+    "emo": "ang",
+    "text": "Alright but don't think that way"
+  },
+  "Ses03F_script03_2_F026": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_F026.wav",
+    "length": 3.79,
+    "emo": "ang",
+    "text": "You are quite insufferable. I suppose it's because you're drunk."
+  },
+  "Ses03M_script02_2_M041": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_2/Ses03M_script02_2_M041.wav",
+    "length": 3.2265625,
+    "emo": "hap",
+    "text": "I mean look at the view of the moon we got from here."
+  },
+  "Ses05F_script02_1_M012": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script02_1/Ses05F_script02_1_M012.wav",
+    "length": 1.9300625,
+    "emo": "hap",
+    "text": "you want my jacket?"
+  },
+  "Ses04F_script02_1_M040": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_1/Ses04F_script02_1_M040.wav",
+    "length": 4.3799375,
+    "emo": "hap",
+    "text": "Ah, I'm giving myself goose bumps.  All my hairs are popping up."
+  },
+  "Ses04M_script02_1_M012": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_1/Ses04M_script02_1_M012.wav",
+    "length": 1.86,
+    "emo": "neu",
+    "text": "You want my jacket?"
+  },
+  "Ses04F_impro02_M018": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro02/Ses04F_impro02_M018.wav",
+    "length": 2.92,
+    "emo": "ang",
+    "text": "That's all I'm saying... No you don't."
+  },
+  "Ses05F_impro08_F014": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_F014.wav",
+    "length": 5.2,
+    "emo": "neu",
+    "text": "Okay so, I'll just look it up and you know see what's going on, maybe we can..."
+  },
+  "Ses02F_impro08_M011": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro08/Ses02F_impro08_M011.wav",
+    "length": 1.567,
+    "emo": "neu",
+    "text": "Well, it's gonna be four of them."
+  },
+  "Ses01F_impro07_M007": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro07/Ses01F_impro07_M007.wav",
+    "length": 9.1199375,
+    "emo": "hap",
+    "text": "I am just- Yeah.  I'm sticking around, I'm just doing my thing.  I'm living here.  I'm so glad you're going to stay, I'm so glad you're going to be here. Yeah. Woo."
+  },
+  "Ses05M_script03_1_M022": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_1/Ses05M_script03_1_M022.wav",
+    "length": 17.388375,
+    "emo": "hap",
+    "text": "So is everyone else in the long run.  Let's be superficial and pity the poor philosophers.  Let's blow trumpets and squeakers and enjoy the party as long as we can, like little quiet idiotic school children."
+  },
+  "Ses03M_impro06_F015": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_F015.wav",
+    "length": 2.166,
+    "emo": "sad",
+    "text": "I'm so sorry."
+  },
+  "Ses03F_script03_2_M016": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_2/Ses03F_script03_2_M016.wav",
+    "length": 1.1225,
+    "emo": "ang",
+    "text": "Nothing."
+  },
+  "Ses01M_impro04_F014": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro04/Ses01M_impro04_F014.wav",
+    "length": 2.9499375,
+    "emo": "neu",
+    "text": "I just don't want you to fly off the handle."
+  },
+  "Ses02F_script01_1_F025": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_1/Ses02F_script01_1_F025.wav",
+    "length": 2.7099375,
+    "emo": "neu",
+    "text": "You're a considerate fellow.  There's nothing wrong with that."
+  },
+  "Ses04F_script01_1_M009": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_M009.wav",
+    "length": 6.4699375,
+    "emo": "ang",
+    "text": "You know that Larry's not coming back and I know it.  Why do we allow him to go on thinking that we believe with him?"
+  },
+  "Ses05M_impro01_F009": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro01/Ses05M_impro01_F009.wav",
+    "length": 1.3899375,
+    "emo": "neu",
+    "text": "I know."
+  },
+  "Ses03F_impro04_M007": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro04/Ses03F_impro04_M007.wav",
+    "length": 2.3244375,
+    "emo": "neu",
+    "text": "You don't owe me anything."
+  },
+  "Ses01F_impro06_M007": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro06/Ses01F_impro06_M007.wav",
+    "length": 1.72,
+    "emo": "sad",
+    "text": "Yeah."
+  },
+  "Ses05M_impro05_M004": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro05/Ses05M_impro05_M004.wav",
+    "length": 4.17,
+    "emo": "neu",
+    "text": "I was coming from um the Midwest, like Iowa."
+  },
+  "Ses02F_script02_1_M041": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script02_1/Ses02F_script02_1_M041.wav",
+    "length": 8.4699375,
+    "emo": "hap",
+    "text": "They just turn as one and start the swim that brings them right here to where we stand, for a massive celebration of sex and death."
+  },
+  "Ses01F_impro02_F016": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro02/Ses01F_impro02_F016.wav",
+    "length": 2.1899375,
+    "emo": "neu",
+    "text": "I have to find sitters."
+  },
+  "Ses04F_impro04_M030": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M030.wav",
+    "length": 2.9499375,
+    "emo": "neu",
+    "text": "I don't know it's like I'm trying to be-"
+  },
+  "Ses01F_script01_3_F029": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_F029.wav",
+    "length": 2.2325,
+    "emo": "neu",
+    "text": "How many?"
+  },
+  "Ses02F_script03_1_M019": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_M019.wav",
+    "length": 3.28,
+    "emo": "hap",
+    "text": "Yes.  Yes. With all his might."
+  },
+  "Ses02M_impro04_F016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro04/Ses02M_impro04_F016.wav",
+    "length": 4.971625,
+    "emo": "neu",
+    "text": "Maybe you should take a little break from it, but I don't think you should stop."
+  },
+  "Ses03M_script03_2_M041": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M041.wav",
+    "length": 2.94325,
+    "emo": "ang",
+    "text": "Very amusing indeed."
+  },
+  "Ses03M_impro07_F012": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_F012.wav",
+    "length": 1.6,
+    "emo": "hap",
+    "text": "All right."
+  },
+  "Ses01F_script01_3_F007": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_3/Ses01F_script01_3_F007.wav",
+    "length": 2.8843125,
+    "emo": "neu",
+    "text": "I knew they would."
+  },
+  "Ses05F_impro03_M062": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro03/Ses05F_impro03_M062.wav",
+    "length": 1.61,
+    "emo": "hap",
+    "text": "Oh thanks, you're too nice"
+  },
+  "Ses02M_script01_1_M038": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script01_1/Ses02M_script01_1_M038.wav",
+    "length": 3.73,
+    "emo": "ang",
+    "text": "The business?  The business doesn't inspire me."
+  },
+  "Ses02M_script02_2_F045": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_2/Ses02M_script02_2_F045.wav",
+    "length": 1.5099375,
+    "emo": "hap",
+    "text": "Or not."
+  },
+  "Ses02F_script03_1_F026": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_F026.wav",
+    "length": 4.25,
+    "emo": "hap",
+    "text": "It burned my comb too and all the towels in the bathroom."
+  },
+  "Ses03F_script02_1_M006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script02_1/Ses03F_script02_1_M006.wav",
+    "length": 5.4226875,
+    "emo": "hap",
+    "text": "Uh- you know, the flashlight. The silver one. There's only one, isn't there?"
+  },
+  "Ses05M_script03_2_F036": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_F036.wav",
+    "length": 3.34,
+    "emo": "ang",
+    "text": "Go away!  Go away!  I- I hate you."
+  },
+  "Ses04M_script01_1_M022": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_M022.wav",
+    "length": 9.5199375,
+    "emo": "ang",
+    "text": "Sometimes you infuriate me, you know that?  Isn't it your business, too, if I tell this to father and he throws a fit about it?  You have such a talent for ignoring things."
+  },
+  "Ses02M_impro07_F009": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro07/Ses02M_impro07_F009.wav",
+    "length": 1.4031875,
+    "emo": "hap",
+    "text": "Yeah, totally."
+  },
+  "Ses02F_script03_1_M001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_1/Ses02F_script03_1_M001.wav",
+    "length": 1.09,
+    "emo": "neu",
+    "text": "I wonder."
+  },
+  "Ses04F_script03_2_M037": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script03_2/Ses04F_script03_2_M037.wav",
+    "length": 2.2899375,
+    "emo": "ang",
+    "text": "Turn it off.  It's driving me mad."
+  },
+  "Ses04M_script03_1_M028": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_1/Ses04M_script03_1_M028.wav",
+    "length": 1.97725,
+    "emo": "neu",
+    "text": "Line?"
+  },
+  "Ses04M_impro03_F016": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro03/Ses04M_impro03_F016.wav",
+    "length": 3.1,
+    "emo": "hap",
+    "text": "Big and shiny.  You're such a guy. [LAUGHTER]"
+  },
+  "Ses03M_script02_2_F033": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_2/Ses03M_script02_2_F033.wav",
+    "length": 5.7180625,
+    "emo": "ang",
+    "text": "Cause everything isn't anything like I thought it would be."
+  },
+  "Ses05F_impro04_M015": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M015.wav",
+    "length": 7.2199375,
+    "emo": "neu",
+    "text": "If it's rent or something like that, I mean I can help you out a little bit, if- if that will help you you know stick with it."
+  },
+  "Ses02M_impro08_M005": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro08/Ses02M_impro08_M005.wav",
+    "length": 2.3945625,
+    "emo": "neu",
+    "text": "I know they don't tell you that kind of thing."
+  },
+  "Ses03M_impro08a_M006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08a/Ses03M_impro08a_M006.wav",
+    "length": 8.91275,
+    "emo": "neu",
+    "text": "Um- I think part of it has to do with the network being down.  It's been having some trouble the last few weeks--"
+  },
+  "Ses04M_script03_2_F026": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F026.wav",
+    "length": 2.5699375,
+    "emo": "ang",
+    "text": "Adders don't snap, they sting."
+  },
+  "Ses04F_script01_2_M000": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_2/Ses04F_script01_2_M000.wav",
+    "length": 2.0404375,
+    "emo": "neu",
+    "text": "Why does that bother you?"
+  },
+  "Ses01F_impro06_F011": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro06/Ses01F_impro06_F011.wav",
+    "length": 15.0799375,
+    "emo": "sad",
+    "text": "And I, you know, I mean, I said I was sorry and I brought it back to her kind of and I like put it on the ground and she was like, no, it's fine.  She was like, I would rather have her back, honestly."
+  },
+  "Ses05F_impro06_M024": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_M024.wav",
+    "length": 1.98,
+    "emo": "neu",
+    "text": "Absolutely."
+  },
+  "Ses05M_script02_1_M031": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_1/Ses05M_script02_1_M031.wav",
+    "length": 11.6399375,
+    "emo": "hap",
+    "text": "And it's single mindedness with no mind. It- It's urgency, it's pure urge.  I mean, they didn't make any decisions.  They don't ask any questions.  They don't give it a name,"
+  },
+  "Ses03M_impro05a_F024": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro05a/Ses03M_impro05a_F024.wav",
+    "length": 1.3799375,
+    "emo": "neu",
+    "text": "Yes.  Well, because--"
+  },
+  "Ses04M_impro01_M003": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro01/Ses04M_impro01_M003.wav",
+    "length": 1.3199375,
+    "emo": "neu",
+    "text": "Yes, I do."
+  },
+  "Ses03M_script03_2_F033": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_F033.wav",
+    "length": 4.31675,
+    "emo": "ang",
+    "text": "Not very funny dear.  In fact, maybe you better have some more brandy."
+  },
+  "Ses04M_impro04_F005": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro04/Ses04M_impro04_F005.wav",
+    "length": 9.99,
+    "emo": "neu",
+    "text": "Well, I mean, if it's that bad, maybe you're gonna have to take something that doesn't really fit, you know.  Like maybe you'll have to do something else for a while.  Find a new field, new skill."
+  },
+  "Ses01M_script02_2_F030": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_F030.wav",
+    "length": 3.5825,
+    "emo": "ang",
+    "text": "I want something to turn out the way that it's supposed to."
+  },
+  "Ses03M_script03_1_F003": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_1/Ses03M_script03_1_F003.wav",
+    "length": 2.15,
+    "emo": "hap",
+    "text": "Now and always sweet."
+  },
+  "Ses01M_impro06_M027": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro06/Ses01M_impro06_M027.wav",
+    "length": 2.0099375,
+    "emo": "sad",
+    "text": "Yeah."
+  },
+  "Ses02M_impro04_F003": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro04/Ses02M_impro04_F003.wav",
+    "length": 3.54,
+    "emo": "neu",
+    "text": "you know you shouldn't give yourself a hard time for that, it's the best you can."
+  },
+  "Ses02F_script01_1_M021": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_1/Ses02F_script01_1_M021.wav",
+    "length": 2.79,
+    "emo": "ang",
+    "text": "Well, then it isn't just my business--"
+  },
+  "Ses05F_script01_1_F000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script01_1/Ses05F_script01_1_F000.wav",
+    "length": 5.465875,
+    "emo": "sad",
+    "text": "What's he going to say? Maybe we should tell him before he sees it."
+  },
+  "Ses01M_script02_2_M028": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script02_2/Ses01M_script02_2_M028.wav",
+    "length": 2.8941875,
+    "emo": "neu",
+    "text": "Do you want to take off our shoes?"
+  },
+  "Ses05F_impro03_M065": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro03/Ses05F_impro03_M065.wav",
+    "length": 3.8299375,
+    "emo": "hap",
+    "text": "Exactly, [LAUGHTER] I think that'll go over great, don't you?"
+  },
+  "Ses02M_impro03_M016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro03/Ses02M_impro03_M016.wav",
+    "length": 1.3628125,
+    "emo": "hap",
+    "text": "No, yes -- so"
+  },
+  "Ses03F_impro03_M002": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro03/Ses03F_impro03_M002.wav",
+    "length": 2.5,
+    "emo": "hap",
+    "text": "Oh, Jesus."
+  },
+  "Ses01M_script01_1_F042": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_1/Ses01M_script01_1_F042.wav",
+    "length": 3.861,
+    "emo": "ang",
+    "text": "I don't understand you, do I?"
+  },
+  "Ses04F_impro05_F011": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro05/Ses04F_impro05_F011.wav",
+    "length": 16.61,
+    "emo": "ang",
+    "text": "Look fifty dollars is unacceptable.  My bag itself cost over a hundred and fifty dollars.  You can't just give me fifty dollar gift certificate to Percoes or whatever the hell and then send me off like that's- that's good enough.  Like that's all I needed was fifty dollars.  My bag is worth more than that."
+  },
+  "Ses02M_impro02_M001": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro02/Ses02M_impro02_M001.wav",
+    "length": 4.6655625,
+    "emo": "sad",
+    "text": "You won't be. I'll be back; I'll be back before you know it. All right, and"
+  },
+  "Ses01M_script03_2_F017": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_F017.wav",
+    "length": 6.0099375,
+    "emo": "ang",
+    "text": "Well it's a woman's duty to allure the man. Watch me a minute will you?"
+  },
+  "Ses04F_impro06_M014": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro06/Ses04F_impro06_M014.wav",
+    "length": 1.7699375,
+    "emo": "sad",
+    "text": "So-"
+  },
+  "Ses01M_impro01_F001": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro01/Ses01M_impro01_F001.wav",
+    "length": 2.05,
+    "emo": "ang",
+    "text": "My window is open."
+  },
+  "Ses04F_script01_3_F014": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_3/Ses04F_script01_3_F014.wav",
+    "length": 8.6139375,
+    "emo": "hap",
+    "text": "I was waiting for you, Chris.  Till then you never wrote and then when you did what did you say.  I mean you sure can be ambiguous you know."
+  },
+  "Ses03F_script01_3_M020": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_3/Ses03F_script01_3_M020.wav",
+    "length": 2.443625,
+    "emo": "hap",
+    "text": "Give me a kiss, Annie."
+  },
+  "Ses01F_impro01_F000": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro01/Ses01F_impro01_F000.wav",
+    "length": 1.9455625,
+    "emo": "neu",
+    "text": "Excuse me."
+  },
+  "Ses02M_impro04_F015": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro04/Ses02M_impro04_F015.wav",
+    "length": 7.444625,
+    "emo": "neu",
+    "text": "But like, just because you're considering why it's been so difficult doesn't mean you should just stop."
+  },
+  "Ses04F_impro04_M015": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_M015.wav",
+    "length": 2.68,
+    "emo": "neu",
+    "text": "I don't know. Well like, I don't know. I mean-"
+  },
+  "Ses05F_impro07_F000": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_F000.wav",
+    "length": 1.9341875,
+    "emo": "hap",
+    "text": "So guess what."
+  },
+  "Ses04M_impro07_M029": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro07/Ses04M_impro07_M029.wav",
+    "length": 1.9599375,
+    "emo": "neu",
+    "text": "I'll go to basketball games."
+  },
+  "Ses03M_script02_1_M000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script02_1/Ses03M_script02_1_M000.wav",
+    "length": 9.59775,
+    "emo": "hap",
+    "text": "Hey, what time is it?  This pokes around midnight right?  God this is great isn't it?"
+  },
+  "Ses03F_script03_1_M027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_1/Ses03F_script03_1_M027.wav",
+    "length": 2.56,
+    "emo": "hap",
+    "text": "That was a rouser, wasn't it?"
+  },
+  "Ses03M_impro08b_F021": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_F021.wav",
+    "length": 4.79,
+    "emo": "neu",
+    "text": "Alright. Well-  I guess - I guess that's okay but,"
+  },
+  "Ses02M_impro06_M007": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_M007.wav",
+    "length": 6.4799375,
+    "emo": "sad",
+    "text": "out to- out to dinner you know and do the troops to California, I mean."
+  },
+  "Ses02F_impro05_M005": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro05/Ses02F_impro05_M005.wav",
+    "length": 4.3938125,
+    "emo": "neu",
+    "text": "Um, we'd be willing to give you uh fifty dollars for--"
+  },
+  "Ses01F_impro03_M011": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro03/Ses01F_impro03_M011.wav",
+    "length": 3.93,
+    "emo": "neu",
+    "text": "Yeah.  But he'll have like a long visa.  Can you go visit then for a long time?"
+  },
+  "Ses03M_impro01_F000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro01/Ses03M_impro01_F000.wav",
+    "length": 3.3319375,
+    "emo": "neu",
+    "text": "Is that a demand sir?"
+  },
+  "Ses03M_script01_3_M031": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_M031.wav",
+    "length": 11.9220625,
+    "emo": "sad",
+    "text": "For instance, one time this...it had been raining several days and this one kid, he came up to me, he gave me his last pair of dry socks, put them in my pocket."
+  },
+  "Ses03F_script03_1_M020": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script03_1/Ses03F_script03_1_M020.wav",
+    "length": 18.28675,
+    "emo": "hap",
+    "text": "Let's blow strumpets, blow-blow trumpets and squeakers and party as much as we can like small quite idiotic school children. Let's savor the delight of the moment. Come, kiss me darling, before worms pop in and out of your eye sockets."
+  },
+  "Ses03M_impro02_M029": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro02/Ses03M_impro02_M029.wav",
+    "length": 6.0289375,
+    "emo": "sad",
+    "text": "It's just going to be--it's going to go faster than you think."
+  },
+  "Ses03M_script01_1_F046": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_1/Ses03M_script01_1_F046.wav",
+    "length": 3.5681875,
+    "emo": "sad",
+    "text": "Yeah.  I can see that."
+  },
+  "Ses05F_script03_2_M010": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script03_2/Ses05F_script03_2_M010.wav",
+    "length": 2.4699375,
+    "emo": "neu",
+    "text": "I'll have a little I think."
+  },
+  "Ses02F_script01_2_M007": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script01_2/Ses02F_script01_2_M007.wav",
+    "length": 1.9399375,
+    "emo": "neu",
+    "text": "You can't read her mind."
+  },
+  "Ses01M_impro05_M028": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro05/Ses01M_impro05_M028.wav",
+    "length": 5.3249375,
+    "emo": "ang",
+    "text": "I know what you guys do when you're not working you're union people; you just sit around on your ass."
+  },
+  "Ses05M_script03_1_M032": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_1/Ses05M_script03_1_M032.wav",
+    "length": 3.18,
+    "emo": "hap",
+    "text": "I should never forget his face. [LAUGHTER]"
+  },
+  "Ses01F_impro05_F023": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro05/Ses01F_impro05_F023.wav",
+    "length": 1.92,
+    "emo": "ang",
+    "text": "Because I probably know him."
+  },
+  "Ses05M_impro06_F003": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro06/Ses05M_impro06_F003.wav",
+    "length": 1.7099375,
+    "emo": "sad",
+    "text": "Oh, my gosh."
+  },
+  "Ses03M_script01_3_M018": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script01_3/Ses03M_script01_3_M018.wav",
+    "length": 6.1279375,
+    "emo": "hap",
+    "text": "Give me a kiss Ann, just give me..."
+  },
+  "Ses05F_impro05_M015": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro05/Ses05F_impro05_M015.wav",
+    "length": 2.0099375,
+    "emo": "neu",
+    "text": "Sentimental value."
+  },
+  "Ses04M_script02_1_M002": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script02_1/Ses04M_script02_1_M002.wav",
+    "length": 12.0448125,
+    "emo": "hap",
+    "text": "Is that, is that - is that just foam?  I can't even tell.  Although, if you can't tell, it's probably isn't them.  It'll probably be unmistakable, don't you think?"
+  },
+  "Ses04F_impro07_M045": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_M045.wav",
+    "length": 3.14,
+    "emo": "hap",
+    "text": "Yeah, you want to go.  No, you want to go. You want to go."
+  },
+  "Ses05F_script01_3_M024": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_script01_3/Ses05F_script01_3_M024.wav",
+    "length": 3.9459375,
+    "emo": "sad",
+    "text": "Remember when I was overseas?  I was in command of the company."
+  },
+  "Ses04M_script01_2_F006": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_2/Ses04M_script01_2_F006.wav",
+    "length": 2.9166875,
+    "emo": "ang",
+    "text": "What's going on here, Joe?"
+  },
+  "Ses05F_impro03_M067": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro03/Ses05F_impro03_M067.wav",
+    "length": 2.1599375,
+    "emo": "hap",
+    "text": "Would you mind popping out a few for me?"
+  },
+  "Ses04M_script01_1_F034": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_1/Ses04M_script01_1_F034.wav",
+    "length": 2.0399375,
+    "emo": "ang",
+    "text": "What the hell is this?"
+  },
+  "Ses01F_script01_1_M007": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script01_1/Ses01F_script01_1_M007.wav",
+    "length": 8.795375,
+    "emo": "neu",
+    "text": "You know Larry is not coming back and I know it.  Why do we allow him to go on thinking that we believe with him?"
+  },
+  "Ses04F_impro03_M030": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro03/Ses04F_impro03_M030.wav",
+    "length": 3.1541875,
+    "emo": "neu",
+    "text": "Greens and blues and maybe a little light yellow?"
+  },
+  "Ses02M_impro06_F003": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro06/Ses02M_impro06_F003.wav",
+    "length": 3.831,
+    "emo": "sad",
+    "text": "Oh, man. I'm so sorry."
+  },
+  "Ses05M_script01_3_F027": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_3/Ses05M_script01_3_F027.wav",
+    "length": 2.8899375,
+    "emo": "hap",
+    "text": "[LAUGHTER] What will I do with a fortune?"
+  },
+  "Ses01F_impro06_F005": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_impro06/Ses01F_impro06_F005.wav",
+    "length": 6.6875,
+    "emo": "sad",
+    "text": "I went to see her headstone a week or two ago."
+  },
+  "Ses02F_impro08_F003": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro08/Ses02F_impro08_F003.wav",
+    "length": 3.47475,
+    "emo": "neu",
+    "text": "Um, how may I help you.  You're trying to book a specific flight?"
+  },
+  "Ses05F_impro04_M027": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro04/Ses05F_impro04_M027.wav",
+    "length": 4.0199375,
+    "emo": "neu",
+    "text": "And you've got to think--well, ask yourself why are they not hiring you?"
+  },
+  "Ses05M_script03_2_M020": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M020.wav",
+    "length": 5.3499375,
+    "emo": "ang",
+    "text": "It's a pity you didn't have a little bit more brandy.  It might have made you a little less disagreeable."
+  },
+  "Ses03F_impro02_F028": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro02/Ses03F_impro02_F028.wav",
+    "length": 2.335,
+    "emo": "sad",
+    "text": "What do you mean?"
+  },
+  "Ses05M_script02_2_F029": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_2/Ses05M_script02_2_F029.wav",
+    "length": 4.6899375,
+    "emo": "sad",
+    "text": "But I just couldn't help thinking about being somewhere else."
+  },
+  "Ses02F_impro03_F028": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_impro03/Ses02F_impro03_F028.wav",
+    "length": 8.463375,
+    "emo": "hap",
+    "text": "It's so girly.  I don't even know how to like--It's so weird, but it'll be fun.  My mom will love to be like--she'll get so into it, I'm sure."
+  },
+  "Ses04F_script02_2_F025": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_F025.wav",
+    "length": 1.6196875,
+    "emo": "neu",
+    "text": "No."
+  },
+  "Ses05M_script01_2_M015": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_2/Ses05M_script01_2_M015.wav",
+    "length": 3.3799375,
+    "emo": "ang",
+    "text": "What's that suppose to mean, me above all?  Look at you, you're shaking."
+  },
+  "Ses01M_impro03_M021": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro03/Ses01M_impro03_M021.wav",
+    "length": 8.6875,
+    "emo": "neu",
+    "text": "And then we can honeymoon.  I want to go tropical though like Bahamas- --or like Tahiti or something. I just want to like beach and like drink."
+  },
+  "Ses04F_script01_1_F023": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script01_1/Ses04F_script01_1_F023.wav",
+    "length": 5.5331875,
+    "emo": "ang",
+    "text": "From father's point of view, he's not dead and you have no right to take his girl."
+  },
+  "Ses04F_script02_2_F037": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_script02_2/Ses04F_script02_2_F037.wav",
+    "length": 13.6249375,
+    "emo": "sad",
+    "text": "I know you are, Augie.  Really I do.  I know you wanted this to be special and nice and it's the full moon and the sand and all but I just couldn't help thinking about being somewhere else."
+  },
+  "Ses01M_script03_2_M033": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_2/Ses01M_script03_2_M033.wav",
+    "length": 2.5525,
+    "emo": "ang",
+    "text": "Well then you'll wake the people downstairs."
+  },
+  "Ses02F_script03_2_M000": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02F_script03_2/Ses02F_script03_2_M000.wav",
+    "length": 3.66,
+    "emo": "neu",
+    "text": "As a matter of fact, the real cause of that row was Peter Burden."
+  },
+  "Ses04F_impro03_M047": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro03/Ses04F_impro03_M047.wav",
+    "length": 5.98,
+    "emo": "neu",
+    "text": "I don't know.  Okay.  I mean gosh.  There's just- look there's a lot of pressure in getting married, okay."
+  },
+  "Ses05F_impro02_M026": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro02/Ses05F_impro02_M026.wav",
+    "length": 10.8799375,
+    "emo": "sad",
+    "text": "Why has to be you?  There's all those other people.  Somebody else can go instead.  It's not right."
+  },
+  "Ses01M_script03_1_F010": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script03_1/Ses01M_script03_1_F010.wav",
+    "length": 1.36,
+    "emo": "hap",
+    "text": "[LAUGHTER]"
+  },
+  "Ses01M_script01_2_F004": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_2/Ses01M_script01_2_F004.wav",
+    "length": 3.5199375,
+    "emo": "ang",
+    "text": "What is going on here, Joe?"
+  },
+  "Ses01F_script02_2_M026": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script02_2/Ses01F_script02_2_M026.wav",
+    "length": 3.990375,
+    "emo": "hap",
+    "text": "Do you want to get married again?"
+  },
+  "Ses04F_impro07_F031": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro07/Ses04F_impro07_F031.wav",
+    "length": 2.31,
+    "emo": "hap",
+    "text": "Right.  Now you're with me."
+  },
+  "Ses03M_impro08b_M011": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08b/Ses03M_impro08b_M011.wav",
+    "length": 7.1899375,
+    "emo": "neu",
+    "text": "So we'll send it- And we'll give you, how about a free year's service?"
+  },
+  "Ses04F_impro08_M019": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro08/Ses04F_impro08_M019.wav",
+    "length": 7.3799375,
+    "emo": "ang",
+    "text": "because I know you're at a desk right now in your stupid corporate building and you're going to send me a check for sixteen dollars and forty two cents."
+  },
+  "Ses01M_impro06_M000": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro06/Ses01M_impro06_M000.wav",
+    "length": 4.0466875,
+    "emo": "sad",
+    "text": "Yeah, I'm just-- yeah"
+  },
+  "Ses02M_script03_1_M021": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_1/Ses02M_script03_1_M021.wav",
+    "length": 13.706625,
+    "emo": "hap",
+    "text": "Let's be superficial and pity the poor philosophers, let's blow our trumpets and squeakers and enjoy the party as much as we can. Like quite idiotic, very small, school children. Let's savor the delight of the moment."
+  },
+  "Ses05F_impro07_F031": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_F031.wav",
+    "length": 2.1899375,
+    "emo": "hap",
+    "text": "you'd be that kid"
+  },
+  "Ses01F_script03_2_F029": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01F_script03_2/Ses01F_script03_2_F029.wav",
+    "length": 3.05,
+    "emo": "ang",
+    "text": "Not very funny, darling.  Why don't you have some more brandy."
+  },
+  "Ses02M_impro08_M018": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro08/Ses02M_impro08_M018.wav",
+    "length": 1.1428125,
+    "emo": "neu",
+    "text": "Okay."
+  },
+  "Ses03M_script03_2_M009": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_2/Ses03M_script03_2_M009.wav",
+    "length": 1.8866875,
+    "emo": "neu",
+    "text": "You want some brandy?"
+  },
+  "Ses02M_script03_2_F036": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_F036.wav",
+    "length": 2.0845,
+    "emo": "ang",
+    "text": "Stop it. Stop it. I hate you."
+  },
+  "Ses03M_impro08a_M000": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro08a/Ses03M_impro08a_M000.wav",
+    "length": 4.8704375,
+    "emo": "neu",
+    "text": "Hello.  This is Viacom Services.  How can I help you?"
+  },
+  "Ses04F_impro04_F018": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04F_impro04/Ses04F_impro04_F018.wav",
+    "length": 6.8999375,
+    "emo": "ang",
+    "text": "I'm really good at what I do.  I'm smart.  I'm trained.  I have the education.  I'm talented.  I cannot-"
+  },
+  "Ses02M_impro03_F024": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_impro03/Ses02M_impro03_F024.wav",
+    "length": 5.8931875,
+    "emo": "hap",
+    "text": "Golly, it just makes me all like romantic inside, like I really want that to happen to me. [LAUGHTER]"
+  },
+  "Ses05M_script03_2_M045": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script03_2/Ses05M_script03_2_M045.wav",
+    "length": 6.0099375,
+    "emo": "ang",
+    "text": "You're a wicked little vampire.  And I pray to God I never set eyes on you again as long as I live."
+  },
+  "Ses05F_impro02_M005": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro02/Ses05F_impro02_M005.wav",
+    "length": 3.0799375,
+    "emo": "ang",
+    "text": "I thought you said this wasn't going to happen for at least a year."
+  },
+  "Ses01M_script01_3_F021": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_script01_3/Ses01M_script01_3_F021.wav",
+    "length": 3.02975,
+    "emo": "sad",
+    "text": "You got to tell me."
+  },
+  "Ses05F_impro06_F024": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro06/Ses05F_impro06_F024.wav",
+    "length": 1.56,
+    "emo": "sad",
+    "text": "[BREATHING]"
+  },
+  "Ses02M_script03_2_M039": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script03_2/Ses02M_script03_2_M039.wav",
+    "length": 1.75475,
+    "emo": "ang",
+    "text": "Turn it off."
+  },
+  "Ses05M_script02_1_M021": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script02_1/Ses05M_script02_1_M021.wav",
+    "length": 6.9650625,
+    "emo": "hap",
+    "text": "I mean, this is a big night for these guys.  You know, life's last orgy."
+  },
+  "Ses04M_script03_2_F035": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script03_2/Ses04M_script03_2_F035.wav",
+    "length": 3.37,
+    "emo": "ang",
+    "text": "Not very funny, dear.  You'd better have some more brandy."
+  },
+  "Ses05M_impro08_M020": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_impro08/Ses05M_impro08_M020.wav",
+    "length": 7.05,
+    "emo": "neu",
+    "text": "Well, if it does happen again, let me give you my direct number and you can call me.  Actually, I'll give you my cell number. Um- It's --"
+  },
+  "Ses03M_script03_1_F006": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_script03_1/Ses03M_script03_1_F006.wav",
+    "length": 1.79,
+    "emo": "hap",
+    "text": "Behave exquisitely."
+  },
+  "Ses04M_script01_2_M019": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_script01_2/Ses04M_script01_2_M019.wav",
+    "length": 5.841125,
+    "emo": "ang",
+    "text": "What have I got to hide?  What the hell is the matter with you, Kate?"
+  },
+  "Ses03F_impro07_M004": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_impro07/Ses03F_impro07_M004.wav",
+    "length": 2.1458125,
+    "emo": "neu",
+    "text": "I know you've been trying to have a baby, right?"
+  },
+  "Ses01M_impro06_F014": {
+    "wav": "{data_root}/Session1/sentences/wav/Ses01M_impro06/Ses01M_impro06_F014.wav",
+    "length": 1.3724375,
+    "emo": "neu",
+    "text": "Mmhmm."
+  },
+  "Ses03F_script01_3_M027": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03F_script01_3/Ses03F_script01_3_M027.wav",
+    "length": 8.70025,
+    "emo": "sad",
+    "text": "Yeah. I guess there is. I guess I was, but uh- it's going from me now."
+  },
+  "Ses02M_script02_1_F016": {
+    "wav": "{data_root}/Session2/sentences/wav/Ses02M_script02_1/Ses02M_script02_1_F016.wav",
+    "length": 1.6299375,
+    "emo": "sad",
+    "text": "I'm just not."
+  },
+  "Ses03M_impro06_M016": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro06/Ses03M_impro06_M016.wav",
+    "length": 4.6484375,
+    "emo": "sad",
+    "text": "and just going to the funeral it's-"
+  },
+  "Ses05M_script01_1_M022": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05M_script01_1/Ses05M_script01_1_M022.wav",
+    "length": 8.56,
+    "emo": "ang",
+    "text": "Isn't it your business, too, if dad -- if I tell dad and he throws a fit about it?  I mean, you have such a talent for ignoring things."
+  },
+  "Ses05F_impro08_F029": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro08/Ses05F_impro08_F029.wav",
+    "length": 1.2099375,
+    "emo": "neu",
+    "text": "You're welcome"
+  },
+  "Ses05F_impro07_M009": {
+    "wav": "{data_root}/Session5/sentences/wav/Ses05F_impro07/Ses05F_impro07_M009.wav",
+    "length": 7.7099375,
+    "emo": "hap",
+    "text": "I don't know.  Well.  I wouldn't mind living by the U.S.C. campus, you know, but I'm not going to go to school right now, so."
+  },
+  "Ses03M_impro07_F019": {
+    "wav": "{data_root}/Session3/sentences/wav/Ses03M_impro07/Ses03M_impro07_F019.wav",
+    "length": 2.34,
+    "emo": "hap",
+    "text": "Mmmm some miso soup."
+  },
+  "Ses04M_impro06_M017": {
+    "wav": "{data_root}/Session4/sentences/wav/Ses04M_impro06/Ses04M_impro06_M017.wav",
+    "length": 2.8199375,
+    "emo": "sad",
+    "text": "Yeah."
+  }
+}
