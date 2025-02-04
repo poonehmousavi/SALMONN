@@ -272,7 +272,14 @@ class SALMONN(nn.Module):
 
         return self._encode_auditory_feature(speech_embeds, audio_embeds=audio_embeds)
 
-    def prompt_wrap(self, embeds, atts, prompt, multi_prompt=False):
+    def prompt_wrap(self, embeds, atts, prompt, multi_prompt=False, device='cuda'):
+        if embeds is None:
+            tokens = self.llama_tokenizer(
+                    prompt, return_tensors="pt", add_special_tokens=False
+                ).to(device)
+            wrapped_embeds = self.llama_model.model.embed_tokens(tokens.input_ids) if not self.lora else self.llama_model.model.model.embed_tokens(tokens.input_ids)
+            return wrapped_embeds, tokens.attention_mask
+
         if prompt:
             if multi_prompt:
                 p_before = []
@@ -381,6 +388,7 @@ class SALMONN(nn.Module):
                 attention_mask=attention_mask,
                 return_dict=True,
                 labels=targets,
+                output_hidden_state=True,
             )
             loss = outputs.loss
 
@@ -398,21 +406,22 @@ class SALMONN(nn.Module):
         return {"loss": loss}
 
     def generate(self, samples, generate_cfg, prompts=None):
-        batch_size = samples["spectrogram"].shape[0]
+        speech_embeds, speech_atts , batch_size= None, None, 1
+        if samples:
+            batch_size = samples["spectrogram"].shape[0]
+            spectrogram = samples["spectrogram"]
+            raw_wav = samples.get("raw_wav", None)
+            audio_padding_mask = samples.get("padding_mask", None)
 
-        spectrogram = samples["spectrogram"]
-        raw_wav = samples.get("raw_wav", None)
-        audio_padding_mask = samples.get("padding_mask", None)
-
-        speech_embeds, speech_atts = self.encode_speech(spectrogram, raw_wav=raw_wav, audio_padding_mask=audio_padding_mask)
-
+            speech_embeds, speech_atts = self.encode_speech(spectrogram, raw_wav=raw_wav, audio_padding_mask=audio_padding_mask)
+        device = next(self.llama_model.parameters()).device
         if prompts is not None:
-            speech_embeds, speech_atts = self.prompt_wrap(speech_embeds, speech_atts, prompts, multi_prompt=True)
+            speech_embeds, speech_atts = self.prompt_wrap(speech_embeds, speech_atts, prompts, multi_prompt=True, device=device)
 
         bos = torch.ones(
             [batch_size, 1],
             dtype=torch.int32,
-            device=speech_embeds.device,
+            device=device,
         ) * self.llama_tokenizer.bos_token_id
         bos_embeds = self.llama_model.model.embed_tokens(bos) if not self.lora else self.llama_model.model.model.embed_tokens(bos)
         atts_bos = speech_atts[:, :1]
@@ -425,19 +434,24 @@ class SALMONN(nn.Module):
         outputs = self.llama_model.generate(
             inputs_embeds=embeds,
             max_new_tokens=generate_cfg.get("max_new_tokens", 200),
-            stopping_criteria=stopping_criteria,
-            num_beams=generate_cfg.get("num_beams", 4),
-            do_sample=generate_cfg.get("do_sample", False),
-            min_length=generate_cfg.get("min_length", 1),
-            temperature=generate_cfg.get("temperature", 1.0),
-            top_p=generate_cfg.get("top_p", 0.9),
-            repetition_penalty=generate_cfg.get("repetition_penalty", 1.0),
-            length_penalty=generate_cfg.get("length_penalty", 1.0),
+            # stopping_criteria=stopping_criteria,
+            # num_beams=generate_cfg.get("num_beams", 6),
+            # do_sample=generate_cfg.get("do_sample", False),
+            # min_length=generate_cfg.get("min_length", 1),
+            # temperature=generate_cfg.get("temperature", 1.0),
+            # top_p=generate_cfg.get("top_p", 0.9),
+            # repetition_penalty=generate_cfg.get("repetition_penalty", 1.0),
+            # length_penalty=generate_cfg.get("length_penalty", 1.0),
             attention_mask=attns,
+            return_dict_in_generate=True,
+            output_hidden_states=True,
         )
-        text = self.llama_tokenizer.batch_decode(outputs, add_special_tokens=False)
+        # print(outputs.sequences.shape)
+        # print(len(outputs.hidden_states))
+        # print(embeds.shape)
+        text = self.llama_tokenizer.batch_decode(outputs.sequences, add_special_tokens=False, skip_special_tokens=True, )[0]
 
-        return text
+        return text, outputs.hidden_states
 
     @classmethod
     def from_config(cls, config):
