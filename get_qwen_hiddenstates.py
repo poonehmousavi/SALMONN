@@ -21,9 +21,9 @@ import json
 
 
 
-LibriSQA_path = "path/LibriSQA-PartI_LibriSQA-PartI-test.json"
-IEMOCAP_path= "path/test.json"
-data_root = "path/IEMOCAP/IEMOCAP_full_release/"
+# LibriSQA_path = "path/LibriSQA-PartI_LibriSQA-PartI-test.json"
+# IEMOCAP_path= "path/test.json"
+# data_root = "path/IEMOCAP/IEMOCAP_full_release/"
 
 
 import h5py
@@ -133,18 +133,18 @@ def generate_outputs(UID, wav_path, transcript, prompt, h5file):
         pdb.set_trace()
 
 
-def extract_LibriSQA(data_path,h5_filename):
+def extract_LibriSQA(data_path,h5_filename, data_root):
     with h5py.File(h5_filename, "a") as h5file:  # Open file in append mode
         with open(data_path, "r") as file:
             data = json.load(file)
             for i in data:
-                wav_path = "/home/mila/a/ali.parviz/pooneh_prj/" + i["speech_path"].replace(".wav", ".flac")
+                wav_path = data_root + i["speech_path"].replace(".wav", ".flac")
                 transcript = i["text"]
                 prompt = i["question"]+". Answer the  question as short as possible (in 10-15 words)"
                 uid= i["speech_path"].split('/')[-1].split('.')[0]
                 generate_outputs(uid,wav_path,transcript,prompt,h5file)
 
-def extract_IEMOCAP(data_path,h5_filename):
+def extract_IEMOCAP(data_path,h5_filename,data_root):
     prompt = "classify the emotion of the speaker in only one word including anger, happiness, sadness, neutrality."
     # Step 1: Load JSON data from the file
     with h5py.File(h5_filename, "a") as h5file:  # Open file in append mode
@@ -182,11 +182,27 @@ if __name__ == "__main__":
         help="Task to perform. Options: 'SQA' for LibriSQA extraction, 'EER' for IEMOCAP extraction."
     )
     parser.add_argument(
-        "--path",
+        "--input_path",
         type=str,
         default=LibriSQA_path,
         # required=True,
         help="Path to the dataset for the selected task."
+    )
+    
+    parser.add_argument(
+        "--output_path",
+        type=str,
+        default=LibriSQA_path,
+        # required=True,
+        help="Path to output."
+    )
+
+    parser.add_argument(
+        "--data_root",
+        type=str,
+        default=LibriSQA_path,
+        # required=True,
+        help="data root where the audio file is saves"
     )
     # Parse arguments
     args = parser.parse_args()
@@ -198,6 +214,9 @@ if __name__ == "__main__":
 
     # Run task based on the input
     if args.task == "SQA":
-        extract_LibriSQA(args.path,"path/QWEN-LibriSQA-hidden.h5")
+        extract_LibriSQA(args.path,args.output_path, args.data_root)
     elif args.task == "ER":
-        extract_IEMOCAP(args.path,"path/QWEN-IEMOCAP-hidden2.h5")
+        extract_IEMOCAP(args.input_path,args.output_path,args.data_root)
+
+
+# python get_qwen_hiddenstates.py --task SQA (or ER)  --input_path {path_to-json file} --output_path {path-to_output.h5} --data_root {path_ _to_audio_file}
