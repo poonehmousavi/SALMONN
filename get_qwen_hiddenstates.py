@@ -184,7 +184,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input_path",
         type=str,
-        default=LibriSQA_path,
+        default='.',
         # required=True,
         help="Path to the dataset for the selected task."
     )
@@ -192,7 +192,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_path",
         type=str,
-        default=LibriSQA_path,
+        default='.',
         # required=True,
         help="Path to output."
     )
@@ -200,7 +200,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_root",
         type=str,
-        default=LibriSQA_path,
+        default='.',
         # required=True,
         help="data root where the audio file is saves"
     )
@@ -214,7 +214,7 @@ if __name__ == "__main__":
 
     # Run task based on the input
     if args.task == "SQA":
-        extract_LibriSQA(args.path,args.output_path, args.data_root)
+        extract_LibriSQA(args.input_path,args.output_path, args.data_root)
     elif args.task == "ER":
         extract_IEMOCAP(args.input_path,args.output_path,args.data_root)
 
