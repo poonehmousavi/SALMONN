@@ -192,16 +192,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_path",
         type=str,
-        default=LibriSQA_path,
-        # required=True,
+        required=True,
         help="Path to output."
     )
 
     parser.add_argument(
         "--data_root",
         type=str,
-        default=LibriSQA_path,
-        # required=True,
+        required=True,
         help="data root where the audio file is saves"
     )
     # Parse arguments
