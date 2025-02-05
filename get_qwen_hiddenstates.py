@@ -193,7 +193,7 @@ if __name__ == "__main__":
         "--output_path",
         type=str,
         default='.',
-        # required=True,
+        required=True,
         help="Path to output."
     )
 
@@ -201,7 +201,7 @@ if __name__ == "__main__":
         "--data_root",
         type=str,
         default='.',
-        # required=True,
+        required=True,
         help="data root where the audio file is saves"
     )
     # Parse arguments
