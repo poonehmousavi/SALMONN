@@ -458,19 +458,23 @@ class SALMONN(nn.Module):
             to_regress_tokens.input_ids == self.llama_tokenizer.pad_token_id, -100
         )
         
-        empty_target_size = speech_atts.shape[1] + 1 # speech tokens and bos token
+        # empty_target_size = speech_atts.shape[1] + 1 # speech tokens and bos token
         
-        batch_size = speech_embeds.shape[0]
-        bos = torch.ones(
-            [batch_size, 1],
-            dtype=to_regress_tokens.input_ids.dtype,
-            device=to_regress_tokens.input_ids.device,
-        ) * self.llama_tokenizer.bos_token_id
-        bos_embeds = self.llama_model.model.embed_tokens(bos) if not self.lora else self.llama_model.model.model.embed_tokens(bos)
-        atts_bos = speech_atts[:, :1]
+        # batch_size = speech_embeds.shape[0]
+        # bos = torch.ones(
+        #     [batch_size, 1],
+        #     dtype=to_regress_tokens.input_ids.dtype,
+        #     device=to_regress_tokens.input_ids.device,
+        # ) * self.llama_tokenizer.bos_token_id
+        # bos_embeds = self.llama_model.model.embed_tokens(bos) if not self.lora else self.llama_model.model.model.embed_tokens(bos)
+        # atts_bos = speech_atts[:, :1]
 
-        inputs_embeds = torch.cat([bos_embeds, speech_embeds, to_regress_embeds], dim=1)
-        attention_mask = torch.cat([atts_bos, speech_atts, to_regress_tokens.attention_mask], dim=1)
+        # inputs_embeds = torch.cat([bos_embeds, speech_embeds, to_regress_embeds], dim=1)
+        # attention_mask = torch.cat([atts_bos, speech_atts, to_regress_tokens.attention_mask], dim=1)
+        
+        empty_target_size = speech_atts.shape[1]
+        inputs_embeds = torch.cat([speech_embeds, to_regress_embeds], dim=1)
+        attention_mask = torch.cat([speech_atts, to_regress_tokens.attention_mask], dim=1)
         
         if self.use_soft_prompting or self.l2p:
             num_tokens = self.num_soft_prompt_tokens if self.use_soft_prompting else self.prompt_size
@@ -549,8 +553,11 @@ class SALMONN(nn.Module):
             # Prepend the soft prompt mask to the existing attention mask
             attns = torch.cat([soft_prompt_mask, attns], dim=1)
 
-        stop_words_ids = [torch.tensor([2]).cuda()]  
+        end_sym_token_ids = self.llama_tokenizer.encode(self.end_sym, add_special_tokens=False)
+        stop_words_ids = [torch.tensor(end_sym_token_ids).cuda()]  
         stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
+
+        
         outputs = self.llama_model.generate(
             inputs_embeds=embeds,
             max_new_tokens=generate_cfg.get("max_new_tokens", 200),

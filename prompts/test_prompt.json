@@ -9,7 +9,7 @@
     "gender_QA": "<Speech><SpeechHere></Speech> {}",
     "phone_recognition": "<Speech><SpeechHere></Speech> Provide the phonetic transcription for the speech.",
     "speech_query": "<Speech><SpeechHere></Speech> Please answer the question in detail.",
-    "emotion_recognition": "<Speech><SpeechHere></Speech> Describe the emotion of the speaker in one word.", 
+    "emotion_recognition": "<Speech><SpeechHere></Speech> Describe the emotion of the speaker in one word. ", 
     "lyrics_recognition": "<Speech><SpeechHere></Speech> Listen to the song and write down its content.",
     "audio_speech_description": "<Speech><SpeechHere></Speech> Describe the speech and the background audio",
     "speaker_verification": "<Speech><SpeechHere></Speech> Do you only hear the same person talking? Answer yes or no.",

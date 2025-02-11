@@ -15,12 +15,12 @@
 model:
   # paths
   # llama_path: "/mnt/dssk/data_rw/shubham/l2p/llama3"
-  llama_model_name: "meta-llama/Meta-Llama-3-8B"
-  cache_dir: "/mnt/dssk/data_rw/shubham/l2p/llama3"
+  llama_model_name: "lmsys/vicuna-13b-v1.1"
+  cache_dir: "/mnt/dssk/data_rw/shubham/l2p/llms/vicuna"
   whisper_path: "/mnt/dssk/data_rw/shubham/l2p/whisper/"
   beats_path: "/mnt/dssk/data_rw/shubham/l2p/beats/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt"
 
-  ckpt: "" # if not "", load model from ckpt for training or evaluation
+  ckpt: "/mnt/dssk/data_rw/shubham/l2p/ckpt/salmonn_v1.pth" # if not "", load model from ckpt for training or evaluation
 
   freeze_whisper: True
   freeze_beats: True
@@ -63,15 +63,22 @@ datasets:
   train_ann_path: "/home/toolkit/SALMONN/data/IEMOCAP/ie-train.json"
   valid_ann_path: "/home/toolkit/SALMONN/data/IEMOCAP/ie-valid.json"
   test_ann_path: "/home/toolkit/SALMONN/data/IEMOCAP/ie-test.json"
+  data_root: "users/rwhetten/IEMOCAP/IEMOCAP_full_release/"
+
+  # train_ann_path: "/home/toolkit/SALMONN/data/LibriSpeech/LibriSQA-PartI-train-new.json"
+  # valid_ann_path: "/home/toolkit/SALMONN/data/LibriSpeech/LibriSQA-PartI_LibriSQA-PartI-test-new.json"
+  # test_ann_path: "/home/toolkit/SALMONN/data/LibriSpeech/LibriSQA-PartI_LibriSQA-PartI-test-new.json"
+  # data_root: "/mnt/dssk/data_rw/shubham/l2p/libriSQA/"
 
   whisper_path: "/mnt/dssk/data_rw/shubham/l2p/whisper/"
-  data_root: "users/rwhetten/IEMOCAP/IEMOCAP_full_release/"
 
 run:
   # log & settings
   seed: 42
   output_dir: "baseline_run_wandb"
   evaluate: False # if True, only evaluate model on test data
+
+  num_valid_iters: 25
 
   log_freq: 5
   epoch_based: False
@@ -90,7 +97,7 @@ run:
   run_name: "baseline"
   project_name: "l2p"
 
-  max_new_tokens: 10
+  max_new_tokens: 150
 
   # optimizer & scheduler
   optims:

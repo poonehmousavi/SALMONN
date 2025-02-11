@@ -7,6 +7,7 @@ import datetime
 from pathlib import Path
 import logging
 import wandb
+from torch.utils.data import Subset
 
 import re
 from nltk.translate.bleu_score import corpus_bleu
@@ -29,6 +30,16 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text).strip()  # Remove extra spaces
     return text
 
+EMOTION_SET = {"happy", "angry", "sad", "neutral"}  # Defined emotions
+EMOTION_PATTERN = re.compile(r"(happy|angry|sad|neutral)", re.IGNORECASE)
+
+def extract_first_emotion(text):
+    """Extracts the first valid emotion from the text, even if words are concatenated."""
+    text = text.lower()  # Normalize text to lowercase
+    # Find all emotion matches (preserves order)
+    matches = [(match.start(), match.group(0)) for match in re.finditer(EMOTION_PATTERN, text)]
+    # Return the earliest occurring match
+    return min(matches, key=lambda x: x[0])[1] if matches else None
 
 class Runner:
     def __init__(self, cfg, model, datasets, job_id):
@@ -73,7 +84,7 @@ class Runner:
             )
         else:
             self.model = self._model
-
+        
         # dataloaders
         self.train_loader = get_dataloader(datasets["train"], self.config.config.run, is_train=True, use_distributed=self.use_distributed)
         self.valid_loader = get_dataloader(datasets["valid"], self.config.config.run, is_train=False, use_distributed=self.use_distributed)
@@ -199,21 +210,32 @@ class Runner:
         all_hypotheses = []
         
         total_correct = torch.tensor(0, dtype=torch.float32, device=self.device)  # Exact match
+        total_loose_exact_match = torch.tensor(0, dtype=torch.float32, device=self.device)  # Substring match
+        total_emotion_exact_match = torch.tensor(0, dtype=torch.float32, device=self.device)  # First emotion match
+
         total_bleu_score = torch.tensor(0, dtype=torch.float32, device=self.device)
         total_rouge_score = torch.tensor(0, dtype=torch.float32, device=self.device)
 
         scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
+        
+        valid_iters = 0
 
         for samples in metric_logger.log_every(dataloader, self.config.config.run.log_freq, header=header):
             samples = prepare_sample(samples, cuda_enabled=self.cuda_enabled)
 
             with torch.cuda.amp.autocast(enabled=self.use_amp):
-                generated_texts = model.generate(samples, self.config.config.run)
+                # text_prompt = "<Speech><SpeechHere></Speech> Describe the emotion of the speaker in one word. Choose from: angry, sad, neutral, happy. Respond with only one word and nothing else. The emotion in the given speech is "
+                text_prompt = "<Speech><SpeechHere></Speech> Recognize the speech and give me the transcription. "
+                combined_prompt = self.config.config.model.prompt_template.format(text_prompt.strip())
+                generated_texts = model.generate(samples, self.config.config.run, prompts=[combined_prompt])
+
                 ground_truths = samples["text"]
 
                 # Preprocess both ground truth and generated text
                 generated_texts = [clean_text(text) for text in generated_texts]
                 ground_truths = [clean_text(text) for text in ground_truths]
+                
+                print("Generated_texts: ", generated_texts)
 
                 # **Exact Match Calculation**
                 exact_matches = torch.tensor(
@@ -222,6 +244,23 @@ class Runner:
                     device=self.device
                 )
                 total_correct += exact_matches.sum()
+                
+                # **Loose Exact Match (Substring)**
+                loose_exact_matches = torch.tensor(
+                    [t in p for p, t in zip(generated_texts, ground_truths)],
+                    dtype=torch.float32,
+                    device=self.device
+                )
+                total_loose_exact_match += loose_exact_matches.sum()
+
+                # **Emotion-Based Exact Match**
+                extracted_emotions = [extract_first_emotion(p) for p in generated_texts]
+                emotion_exact_matches = torch.tensor(
+                    [e == t for e, t in zip(extracted_emotions, ground_truths)],
+                    dtype=torch.float32,
+                    device=self.device
+                )
+                total_emotion_exact_match += emotion_exact_matches.sum()
 
                 # **BLEU & ROUGE-L Preparation**
                 all_references.extend([[t.split()] for t in ground_truths])  # Tokenized refs
@@ -234,6 +273,10 @@ class Runner:
             })
 
             total_samples += len(samples["id"])
+            
+            valid_iters += 1
+            if self.config.config.run.num_valid_iters and valid_iters >= self.config.config.run.num_valid_iters:
+                break
 
         # **Compute Corpus-Level BLEU Score**
         bleu_start_time = time.time()
@@ -252,12 +295,16 @@ class Runner:
         if is_dist_avail_and_initialized():
             dist.barrier()
             dist.all_reduce(total_correct)
+            dist.all_reduce(total_loose_exact_match)
+            dist.all_reduce(total_emotion_exact_match)
             dist.all_reduce(total_bleu_score)
             dist.all_reduce(total_rouge_score)
             dist.all_reduce(total_samples)
 
         # **Compute Final Scores**
         mean_exact = (total_correct / total_samples).item() if total_samples > 0 else 0.0
+        mean_loose_exact = (total_loose_exact_match / total_samples).item() if total_samples > 0 else 0.0
+        mean_emotion_exact = (total_emotion_exact_match / total_samples).item() if total_samples > 0 else 0.0
         mean_bleu = total_bleu_score if total_samples > 0 else 0.0
         mean_rouge = total_rouge_score if total_samples > 0 else 0.0
 
@@ -266,6 +313,11 @@ class Runner:
         logging.info(f" - BLEU computation time: {bleu_time:.2f} seconds")
         logging.info(f" - ROUGE computation time: {rouge_time:.2f} seconds")
         logging.info(f" - Total validation time: {total_validation_time:.2f} seconds")
+        logging.info(f" - Exact Match (Strict): {mean_exact:.4f}")
+        logging.info(f" - Exact Match (Loose - Substring): {mean_loose_exact:.4f}")
+        logging.info(f" - Exact Match (First Emotion Match): {mean_emotion_exact:.4f}")
+        logging.info(f" - BLEU Score: {mean_bleu:.4f}")
+        logging.info(f" - ROUGE-L Score: {mean_rouge:.4f}")
         
         # **Save JSON if needed**
         if save_json and is_main_process():
@@ -277,6 +329,8 @@ class Runner:
                 "val/mean_exact_match": mean_exact,
                 "val/mean_bleu_score": mean_bleu,
                 "val/mean_rougeL_score": mean_rouge,
+                "val/mean_loose_exact": mean_loose_exact,
+                "val/mean_emotion_exact": mean_emotion_exact,
                 "epoch": epoch
             })
 

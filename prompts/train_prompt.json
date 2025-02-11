@@ -104,8 +104,7 @@
         "<Speech><SpeechHere></Speech> Transcribe the words spoken by each person in the audio."
     ],
     "emotion_recognition": [
-        "<Speech><SpeechHere></Speech> Describe the emotion of the speaker in one word.",
-        "<Speech><SpeechHere></Speech> Use one word to describe the speaker's emotion."
+        "<Speech><SpeechHere></Speech> Describe the emotion of the speaker in one word. "
     ],
     "music_description": [
         "<Speech><SpeechHere></Speech> Listen to this music clip and describe the music.",
