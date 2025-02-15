@@ -400,7 +400,7 @@ class SALMONN(nn.Module):
                 top_k = int(0.4 * self.pool_size)  # deterministic at inference
             else:
                 # Random randint is inclusive of both end points!
-                top_k = random.randint(1, self.pool_size) if self.prompt_size == -1 else self.prompt_size
+                top_k = random.randint(1, int(0.4 * self.pool_size)) if self.prompt_size == -1 else self.prompt_size
             selected_prompts, diversity_loss, token_indices = self.prompt_pool(input_representations, top_k=top_k)  # Select relevant prompts
             inputs_embeds = torch.cat([selected_prompts, inputs_embeds], dim=1)
         else:
