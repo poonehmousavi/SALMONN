@@ -28,60 +28,9 @@ from .modeling_llama import LlamaForCausalLM
 from .modeling_whisper import WhisperModel
 from .beats.BEATs import BEATsConfig, BEATs
 from .utils import StoppingCriteriaSub
+from .prompt_pools import PromptPool, StaticPromptPool3
 
-class PromptPool(nn.Module):
-    def __init__(self, num_prompts=20, prompt_dim=1024, model_input_embeds=None, p=0.1):
-        super().__init__()
-        self.num_prompts = num_prompts
-        
-        # Initialize keys with small random values
-        self.prompt_keys = nn.Parameter(torch.randn(num_prompts, prompt_dim) * 0.01)  # Learnable keys
-        
-        # Initialize values based on model input embeddings mean plus noise
-        if model_input_embeds is not None:
-            self.prompt_values = nn.Parameter(model_input_embeds)
-        else:
-            self.prompt_values = nn.Parameter(torch.randn(num_prompts, prompt_dim))
-            
-        self.dropout = None
-        if p > 0:
-            self.dropout = torch.nn.Dropout(p)
-            
-    def compute_cosine_similarity(self, input_embedding):
-        """Compute cosine similarities between normalized input_embedding and prompt keys."""
-        norm_input = F.normalize(input_embedding, dim=-1)       # [B, prompt_dim]
-        norm_keys = F.normalize(self.prompt_keys, dim=-1)         # [num_prompts, prompt_dim]
-        return torch.matmul(norm_input, norm_keys.T)              # [B, num_prompts]
 
-    def forward(self, input_embedding, top_k=5):
-        """
-        Selects the top-k relevant prompts based on similarity with the input.
-        Arguments:
-        - input_embedding: [batch_size, hidden_dim]
-        - top_k: Number of prompts to select
-        """
-        # Compute similarities between input and prompt keys
-        similarities = self.compute_cosine_similarity(input_embedding)  # [batch_size, num_prompts]
-            
-        normalized_similarities = F.softmax(similarities, dim=1)
-        if self.dropout is not None:
-            normalized_similarities = self.dropout(normalized_similarities)
-            normalized_similarities = F.softmax(similarities, dim=1)
-            
-        # Select top-k indices and corresponding values
-        topk_values, topk_indices = torch.topk(normalized_similarities, top_k, dim=1)
-        
-        # Gather the selected prompt values
-        selected_prompts = self.prompt_values[topk_indices]  # [B, top_k, prompt_dim]
-        
-        # Compute diversity loss as the sum of the top-k similarity values, averaged over the batch
-        diversity_loss = - topk_values.sum(dim=1).mean()
-        
-        selected_prompts = self.prompt_values[topk_indices]  # [batch_size, top_k, prompt_dim]
-            
-        return selected_prompts, diversity_loss, topk_indices
-    
-    
 class SALMONN(nn.Module):
     @classmethod
     def init_speech_Qformer(cls, num_query_token, speech_width, num_hidden_layers=2):
@@ -245,7 +194,7 @@ class SALMONN(nn.Module):
                 base_embedding_mean = self.llama_model.model.embed_tokens.weight.mean(dim=0)  # Compute mean embedding
                 print(self.pool_size, type(self.pool_size), self.llama_model.config.hidden_size, type(self.llama_model.config.hidden_size))
                 noise = torch.randn(self.pool_size, self.llama_model.config.hidden_size) * 0.02  # Small noise
-                self.prompt_pool = PromptPool(
+                self.prompt_pool = StaticPromptPool3(
                     num_prompts=self.pool_size,
                     prompt_dim=base_embedding_mean.shape[-1],
                     model_input_embeds=base_embedding_mean.unsqueeze(0) + noise,
@@ -390,7 +339,7 @@ class SALMONN(nn.Module):
 
         return self._encode_auditory_feature(speech_embeds, audio_embeds=audio_embeds)
     
-    def inject_soft_prompt(self, inputs_embeds, input_representations=None, inference=False):
+    def inject_soft_prompt(self, inputs_embeds, input_representations=None, inference=False, tasks=[]):
         """
         Injects soft prompts into the input embeddings. Supports both fixed and L2P-style soft prompts.
         """
@@ -401,7 +350,8 @@ class SALMONN(nn.Module):
             else:
                 # Random randint is inclusive of both end points!
                 top_k = random.randint(1, int(0.4 * self.pool_size)) if self.prompt_size == -1 else self.prompt_size
-            selected_prompts, diversity_loss, token_indices = self.prompt_pool(input_representations, top_k=top_k)  # Select relevant prompts
+            selected_prompts, diversity_loss, token_indices = self.prompt_pool(
+                input_representations, top_k=top_k, tasks=tasks)  # Select relevant prompts
             inputs_embeds = torch.cat([selected_prompts, inputs_embeds], dim=1)
         else:
             batch_size = inputs_embeds.size(0)
@@ -510,7 +460,8 @@ class SALMONN(nn.Module):
         
         diversity_loss = 0.0
         if self.use_soft_prompting or self.l2p:
-            inputs_embeds, diversity_loss, token_indices = self.inject_soft_prompt(inputs_embeds, speech_embeds.mean(1), inference=False)
+            inputs_embeds, diversity_loss, token_indices = self.inject_soft_prompt(
+                inputs_embeds, speech_embeds.mean(1), inference=False, tasks=samples["task"])
             num_tokens = self.num_soft_prompt_tokens if self.use_soft_prompting else token_indices.size(1)
             soft_prompt_mask = torch.ones(
                 inputs_embeds.shape[0], num_tokens, device=inputs_embeds.device, dtype=attention_mask.dtype
@@ -572,7 +523,8 @@ class SALMONN(nn.Module):
         
         token_indices = None
         if self.use_soft_prompting or self.l2p: 
-            embeds, _, token_indices = self.inject_soft_prompt(embeds, speech_embeds.mean(1), inference=True)
+            embeds, _, token_indices = self.inject_soft_prompt(
+                embeds, speech_embeds.mean(1), inference=True, tasks=samples["task"])
             
             num_prompts = self.num_soft_prompt_tokens if self.use_soft_prompting else token_indices.size(1)
             
