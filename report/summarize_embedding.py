@@ -44,8 +44,12 @@ if __name__ == "__main__":
             print(f"Processing UID: {UID}")
 
             # Load response texts
-            response_text_audio = h5file[UID]["audio_model"].attrs["response_text"][0]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
-            response_text_text = h5file[UID]["text_model"].attrs["response_text"][0] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
+            #response_text_audio = h5file[UID]["audio_model"].attrs["response_text"][0]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
+            #response_text_text = h5file[UID]["text_model"].attrs["response_text"][0] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
+
+            response_text_audio = h5file[UID]["audio_model"].attrs["response_text"]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
+            response_text_text = h5file[UID]["text_model"].attrs["response_text"] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
+
 
             # Convert response texts into sentence embeddings
             audio_text_embedding = text_embedder.encode(response_text_audio)
@@ -80,6 +84,7 @@ if __name__ == "__main__":
                 # **Extract All Layers but **
                 for seq_idx in range(0,seq_len_audio):
                     for layer_idx in range(0, num_layers_audio):
+
                         layer_group = audio_group[f"tuple_{seq_idx}"]
                         
                         # Extract and fix sequence dimension

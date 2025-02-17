@@ -23,9 +23,9 @@ from utils import prepare_one_sample
 import json
 from tqdm import tqdm
 
-LibriSQA_path = "/home/mila/a/ali.parviz/pooneh_prj/LibriSQA-PartI_LibriSQA-PartI-test.json"
-IEMOCAP_path= "/home/mila/a/ali.parviz/pooneh_prj/test.json"
-data_root = "/network/scratch/a/ali.parviz/salmon_ckpt/users/rwhetten/IEMOCAP/IEMOCAP_full_release/"
+# LibriSQA_path = "/home/mila/a/ali.parviz/pooneh_prj/LibriSQA-PartI_LibriSQA-PartI-test.json"
+# IEMOCAP_path= "/home/mila/a/ali.parviz/pooneh_prj/test.json"
+#data_root = "/network/scratch/a/ali.parviz/salmon_ckpt/users/rwhetten/IEMOCAP/IEMOCAP_full_release/"
 
 
 import h5py
@@ -36,6 +36,7 @@ import torch
 
 def generate_outputs(UID, wav_path, transcript, prompt, h5file):
     """Generates model outputs and saves them efficiently in the open HDF5 file."""
+    import pdb; pdb.set_trace()
     try:
         print("=====================================")
 
@@ -102,13 +103,13 @@ def generate_outputs(UID, wav_path, transcript, prompt, h5file):
         pdb.set_trace()
 
 
-def extract_LibriSQA(data_path,h5_filename):
+def extract_LibriSQA(data_path,h5_filename, data_root):
 
     with h5py.File(h5_filename, "a") as h5file:  # Open file in append mode
         with open(data_path, "r") as file:
             data = json.load(file)
             for i in tqdm(data):
-                wav_path = "/home/mila/a/ali.parviz/pooneh_prj/" + i["speech_path"].replace(".wav", ".flac")
+                wav_path = data_root + i["speech_path"].replace(".wav", ".flac")
                 transcript = i["text"]
                 prompt = i["question"]+". Answer the  question as short as possible (in 10-15 words)"
                 uid= i["speech_path"].split('/')[-1].split('.')[0]
@@ -152,13 +153,31 @@ if __name__ == "__main__":
         choices=["SQA", "ER"],
         help="Task to perform. Options: 'SQA' for LibriSQA extraction, 'EER' for IEMOCAP extraction."
     )
+
     parser.add_argument(
-        "--path",
+        "--input_path",
         type=str,
-        default=LibriSQA_path,
+        default='.',
         # required=True,
         help="Path to the dataset for the selected task."
     )
+
+    parser.add_argument(
+        "--output_path",
+        type=str,
+        default='.',
+        required=True,
+        help="Path to output."
+    )
+
+    parser.add_argument(
+        "--data_root",
+        type=str,
+        default='.',
+        required=True,
+        help="data root where the audio file is saves"
+    )
+
     # Parse arguments
     args = parser.parse_args()
 
@@ -170,10 +189,8 @@ if __name__ == "__main__":
 
     wav_processor = WhisperFeatureExtractor.from_pretrained(cfg.config.model.whisper_path)
 
-
-
     # Run task based on the input
     if args.task == "SQA":
-        extract_LibriSQA(args.path,"/network/scratch/a/ali.parviz/salmon_ckpt/LibriSQA-hidden.h5")
+        extract_LibriSQA(args.input_path,"./libriSQA-salmon_hidden.h5", args.data_root)
     elif args.task == "ER":
-        extract_IEMOCAP(args.path,"/network/scratch/a/ali.parviz/salmon_ckpt/IEMOCAP-hidden.h5")
+        extract_IEMOCAP(args.path,"./IEMOCAP-hidden.h5", args.data_root)

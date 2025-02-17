@@ -36,101 +36,99 @@ def move_to_cuda(input_dict):
 
 def generate_outputs(UID, wav_path, transcript, prompt, h5file):
     """Generates model outputs and saves them efficiently in the open HDF5 file."""
-    try:
-        print("=====================================")
-        print("Processing UID:", UID)
+    print("=====================================")
+    print("Processing UID:", UID)
 
-        # Ensure we don't overwrite existing data for the UID
-        if UID in h5file:
-            print(f"Skipping {UID}, already exists in the HDF5 file.")
-            return  # Skip processing if already saved
-        
-        # Create a group for this UID
-        group = h5file.create_group(UID)
-        
+    # Ensure we don't overwrite existing data for the UID
+    if UID in h5file:
+        print(f"Skipping {UID}, already exists in the HDF5 file.")
+        return  # Skip processing if already saved
+    
+    # Create a group for this UID
+    group = h5file.create_group(UID)
+    
 
-        conversation = [
-            {'role': 'system', 'content': 'You are a helpful assistant.'}, 
-            {"role": "user", "content": [
-                {"type": "audio", "audio_url": wav_path},
-                {"type": "text", "text":  prompt.strip()},
-            ]},
-        ]
-        prompt_audio = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
-       
-        if wav_path is None:
-            audios = [[]]
-        else:
-            audios = []
-            for message in conversation:
-                if isinstance(message["content"], list):
-                    for ele in message["content"]:
-                        if ele["type"] == "audio":
-                            audios.append(
-                                librosa.load(
-                                    wav_path, 
-                                    sr=processor.feature_extractor.sampling_rate)[0]
-                    )
-
-        inputs = processor(text=prompt_audio, audios=audios, return_tensors="pt", padding=True)
-        inputs =move_to_cuda(inputs)
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=150,
-            return_dict_in_generate=True,
-            output_hidden_states=True,
-        )
-        generate_ids = outputs.sequences[:, inputs['input_ids'].size(1):]
-        response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-        response_text_audio, hidden_states_audio = response, outputs.hidden_states
-        audio_group = group.create_group("audio_model")
-        audio_group.attrs["response_text"] = response_text_audio
-        for idx, state in enumerate(hidden_states_audio):
-            state_group = audio_group.create_group(f"tuple_{idx}")
-            for t_idx, tensor in enumerate(state):
-                state_group.create_dataset(
-                    f"tensor_{t_idx}", data=tensor.detach().cpu().numpy(), compression="gzip"
+    conversation = [
+        {'role': 'system', 'content': 'You are a helpful assistant.'}, 
+        {"role": "user", "content": [
+            {"type": "audio", "audio_url": wav_path},
+            {"type": "text", "text":  prompt.strip()},
+        ]},
+    ]
+    prompt_audio = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+   
+    if wav_path is None:
+        audios = [[]]
+    else:
+        audios = []
+        for message in conversation:
+            if isinstance(message["content"], list):
+                for ele in message["content"]:
+                    if ele["type"] == "audio":
+                        audios.append(
+                            librosa.load(
+                                wav_path, 
+                                sr=processor.feature_extractor.sampling_rate)[0]
                 )
 
+    inputs = processor(text=prompt_audio, audios=audios, return_tensors="pt", padding=True)
+    inputs =move_to_cuda(inputs)
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=150,
+        return_dict_in_generate=True,
+        output_hidden_states=True,
+    )
+    generate_ids = outputs.sequences[:, inputs['input_ids'].size(1):]
+    response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+    response_text_audio, hidden_states_audio = response, outputs.hidden_states
+    audio_group = group.create_group("audio_model")
+    audio_group.attrs["response_text"] = response_text_audio
+    for idx, state in enumerate(hidden_states_audio):
+        state_group = audio_group.create_group(f"tuple_{idx}")
+        for t_idx, tensor in enumerate(state):
+            state_group.create_dataset(
+                f"tensor_{t_idx}", data=tensor.detach().cpu().numpy(), compression="gzip"
+            )
 
-        conversation = [
-            {'role': 'system', 'content': 'You are a helpful assistant.'}, 
-            {"role": "user", "content": [
-                {"type": "audio", "audio_url": None},
-                {"type": "text", "text":  "Audio Transcription: {text}\n\n{question}".format(text=transcript, question=prompt.strip())},
-            ]},
-        ]
-        prompt_text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+    conversation = [
+        {'role': 'system', 'content': 'You are a helpful assistant.'}, 
+        {"role": "user", "content": [
+            {"type": "audio", "audio_url": None},
+            {"type": "text", "text":  "Audio Transcription: {text}\n\n{question}".format(text=transcript, question=prompt.strip())},
+        ]},
+    ]
+    prompt_text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
 
-        inputs = processor(text=prompt_text, audios= [[]], return_tensors="pt", padding=True)
-        inputs =move_to_cuda(inputs)
+    inputs = processor(text=prompt_text, audios= [[]], return_tensors="pt", padding=True)
+    inputs =move_to_cuda(inputs)
 
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=150,
-            return_dict_in_generate=True,
-            output_hidden_states=True,
-        )
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=150,
+        return_dict_in_generate=True,
+        output_hidden_states=True,
+    )
 
-        print(outputs.sequences.shape)
-        print(len(outputs.hidden_states))
-        generate_ids = outputs.sequences[:, inputs['input_ids'].size(1):]
-        response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-        response_text_text, hidden_states_text = response, outputs.hidden_states
-        text_group = group.create_group("text_model")
-        text_group.attrs["response_text"] = response_text_text
-        for idx, state in enumerate(hidden_states_text):
-            state_group = text_group.create_group(f"tuple_{idx}")
-            for t_idx, tensor in enumerate(state):
-                state_group.create_dataset(
-                    f"tensor_{t_idx}", data=tensor.detach().cpu().numpy(), compression="gzip"
-                )
+    print(outputs.sequences.shape)
+    print(len(outputs.hidden_states))
+    generate_ids = outputs.sequences[:, inputs['input_ids'].size(1):]
+    response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+    response_text_text, hidden_states_text = response, outputs.hidden_states
+    text_group = group.create_group("text_model")
+    text_group.attrs["response_text"] = response_text_text
+    for idx, state in enumerate(hidden_states_text):
+        state_group = text_group.create_group(f"tuple_{idx}")
+        for t_idx, tensor in enumerate(state):
+            state_group.create_dataset(
+                f"tensor_{t_idx}", data=tensor.detach().cpu().numpy(), compression="gzip"
+            )
 
 
-    except Exception as e:
-        print(f"Error processing UID {UID}: {e}")
-        import pdb
-        pdb.set_trace()
+    # except Exception as e:
+    #    print(f"Error processing UID {UID}: {e}")
+    #    import pdb
+    #    pdb.set_trace()
 
 
 def extract_LibriSQA(data_path,h5_filename, data_root):

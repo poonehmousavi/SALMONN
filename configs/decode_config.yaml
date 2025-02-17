@@ -14,11 +14,11 @@
 
 model:
   # paths
-  llama_path: "path to llama model"
-  whisper_path: "path to whisper model"
-  beats_path: "path to beats model"
+  llama_path: '/network/scratch/c/cem.subakan/vicuna-13b-v1.1'
+  whisper_path: "/network/scratch/c/cem.subakan/whisper-large-v2"
+  beats_path: "/network/scratch/c/cem.subakan/beats.pt"
 
-  ckpt: "model ckpt" # model used for decoding
+  ckpt: "/network/scratch/c/cem.subakan/SALMONN/salmonn_v1.pth" # model used for decoding
 
   freeze_whisper: True
   freeze_beats: True
