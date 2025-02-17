@@ -5,8 +5,11 @@ import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 import argparse
+<<<<<<< HEAD
 import math
 import matplotlib.pyplot as plt
+=======
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
 
 def norm_and_convolve(seq1, seq2):
     seq1, seq2 = seq1.squeeze(), seq2.squeeze()
@@ -27,6 +30,7 @@ def norm_and_convolve(seq1, seq2):
     norm = (shorterseq ** 2).sum(-1, keepdim=True).sqrt()
     shorterseq = shorterseq / norm
 
+<<<<<<< HEAD
     innerprods = (shorterseq.unsqueeze(0) * longerseq.unsqueeze(1)).sum(-1).cpu()
     return innerprods
 
@@ -51,6 +55,11 @@ def convert_whisper(whisper_data, simmat):
         whisper_mat[begin:end, t] = 1
     return whisper_mat
 
+=======
+    innerprods = (shorterseq.unsqueeze(0) * longerseq.unsqueeze(1)).sum(-1)
+    return innerprods
+
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
 if __name__ == "__main__":
     # Create argument parser
     parser = argparse.ArgumentParser(description="Run tasks based on the given input.")
@@ -66,6 +75,7 @@ if __name__ == "__main__":
         help="Path to the dataset for the selected task."
     )
 
+<<<<<<< HEAD
     parser.add_argument(
         "--whisper_path",
         type=str,
@@ -74,6 +84,8 @@ if __name__ == "__main__":
         help="Path to the dataset for the selected task."
     )
 
+=======
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
     parser.add_argument("--hidden_dim", default=4096, type=int, help='path to configuration file. 4096 for qwen and 5120 for salmon')
     # Parse arguments
     args = parser.parse_args()
@@ -89,6 +101,7 @@ if __name__ == "__main__":
 
     # Store filtered pairs
     filtered_data = {}
+<<<<<<< HEAD
     skip_count = 0
     count = 0
 
@@ -97,6 +110,10 @@ if __name__ == "__main__":
     model_qwen = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", device_map="auto")
     
     whisper_data = pickle.load(open(args.whisper_path, 'rb'))
+=======
+    skip_count=0
+    count=0
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
     with h5py.File(h5_filename, "r") as h5file:
         for UID in h5file.keys():
             count +=1
@@ -157,6 +174,7 @@ if __name__ == "__main__":
                     audio_embeddings = audio_group["tuple_0"][f'tensor_{nlayer}'][:]
                     text_embeddings = text_group["tuple_0"][f'tensor_{nlayer}'][:]
 
+<<<<<<< HEAD
                     audio_embeddings = torch.from_numpy(audio_embeddings).cuda()
                     text_embeddings = torch.from_numpy(text_embeddings).cuda()
 
@@ -190,6 +208,13 @@ if __name__ == "__main__":
                 
 
 
+=======
+                    audio_embeddings = torch.from_numpy(audio_embeddings)
+                    text_embeddings = torch.from_numpy(text_embeddings)
+
+                    all_innerprods.append(norm_and_convolve(audio_embeddings, text_embeddings))
+
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
 
                 # for seq_idx in range(0,seq_len_text):
                 #     for layer_idx in range(0, num_layers_text): 
@@ -219,7 +244,11 @@ if __name__ == "__main__":
                 # }
                 filtered_data[UID] = {'innerprods' : all_innerprods}
                 with open(args.output_path, "wb") as f:
+<<<<<<< HEAD
                     pickle.dump(filtered_data, f)
+=======
+                        pickle.dump(filtered_data, f)
+>>>>>>> 0dc86209a5acc08195be69b9f3664c54f621c9c5
 
             else:
                 print(f"Skipping {UID} (Similarity: {text_similarity:.2f})")
