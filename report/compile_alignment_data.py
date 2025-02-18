@@ -25,16 +25,15 @@ all_l1s_v2 = np.array(all_l1s_v2)
 all_l1s_v3 = np.array(all_l1s_v3)
 all_l1paths = np.array(all_l1paths)
 
-
-# plt.plot(all_l1s.mean(0), label='l1')
+plt.plot(all_l1s.mean(0), label='l1')
 #plt.plot(all_l1s_v2.mean(0), label='l1_v2')
 #plt.plot(all_l1s_v3.mean(0), label='l1_v3')
-plt.plot(all_l1paths.mean(0), label='l1path')
+#plt.plot(all_l1paths.mean(0), label='l1path')
 
 
 #plt.plot(all_dtws.mean(0), label='dtw')
 
 plt.legend()
 
-plt.show()
+plt.savefig('qwen_summarized.png')
 

@@ -54,7 +54,7 @@ def convert_whisper(whisper_data, simmat):
             end = round((chunk['timestamp'][1] / (max_time + eps)) * ntime_steps)
         else:
             end = simmat.shape[0]
-        whisper_mat[begin:end + 1, t] = 1
+        whisper_mat[begin:end, t] = 1
     return whisper_mat
 
 if __name__ == "__main__":
@@ -169,16 +169,27 @@ if __name__ == "__main__":
 
                 all_innerprods.append(norm_and_convolve(audio_embeddings, text_embeddings))
 
-            
+            # eliminate the prompt part
+            # for qwen these are fixed
+            promptpre_audio = 20
+            promptpre_text = 27
+
             whisper_uid = whisper_data[UID]
-
             text_whisper = whisper_uid['transcript']
-            
-            #qwen_tokens = processor_qwen.tokenizer(text_whisper)['input_ids']
+            qwen_prompt = whisper_uid['qwen_prompt']
 
-            # take the last layer, and eliminate the prompt part
-            promptpre = 27
-            promptpost = -23
+            qwen_tokens = processor_qwen.tokenizer(qwen_prompt)['input_ids']
+            decoded = processor_qwen.tokenizer.decode(qwen_tokens[promptpre_text:])
+
+            for t in range(1, len(qwen_tokens[promptpre_text:])):
+                candidate = processor_qwen.tokenizer.decode(qwen_tokens[promptpre_text:-t])
+                if candidate.strip() == whisper_uid['transcript']:
+                    break
+            promptpost = -t
+
+            # just doing this in case strings do not match due to special characters 
+            if t > (len(qwen_tokens[promptpre_text:]) - 1):
+                t = len(qwen_tokens[promptpre_text:]) // 2
 
             # qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
             l2_errors = []
@@ -189,7 +200,7 @@ if __name__ == "__main__":
             l1_path_errors = []
 
             for nlayer in range(num_layers_audio):
-                layer = all_innerprods[nlayer][promptpre:promptpost, promptpre:promptpost]
+                layer = all_innerprods[nlayer][promptpre_audio:promptpost, promptpre_text:promptpost]
                 whisper_mat = convert_whisper(whisper_uid, layer)
 
                 # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
@@ -216,15 +227,14 @@ if __name__ == "__main__":
 
             # if we want to see what is going on
             if 0:
-                plt.imshow(path_whisper[0].cpu())
+                plt.imshow(whisper_mat.transpose(1, 0).cpu())
                 plt.savefig('whisper_mat.png')
 
                 plt.imshow(layer.transpose(1, 0).cpu())
                 plt.savefig('last_layer.png')
 
-                plt.imshow(path_lastlayer[0].cpu())
+                plt.imshow(path_layer.transpose(1, 0).cpu())
                 plt.savefig('path_last_layer.png')
-
 
             filtered_data[UID] = {#'innerprods': all_innerprods,
                                   'l1_errors': l1_errors,

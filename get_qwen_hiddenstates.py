@@ -100,8 +100,8 @@ def generate_outputs(UID, wav_path, transcript, prompt, h5file):
     ]
     prompt_text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
 
-    inputs = processor(text=prompt_text, audios= [[]], return_tensors="pt", padding=True)
-    inputs =move_to_cuda(inputs)
+    inputs = processor(text=prompt_text, audios=[[]], return_tensors="pt", padding=True)
+    inputs = move_to_cuda(inputs)
 
     outputs = model.generate(
         **inputs,
