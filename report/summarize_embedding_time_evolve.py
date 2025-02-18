@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import speechbrain
 import speechbrain.lobes.models.FastSpeech2 as fs2
 from dtw import *
+import tqdm
 
 
 def norm_and_convolve(seq1, seq2):
@@ -102,7 +103,7 @@ if __name__ == "__main__":
     
     whisper_data = pickle.load(open(args.whisper_path, 'rb'))
     with h5py.File(h5_filename, "r") as h5file:
-        for UID in h5file.keys():
+        for UID in tqdm.tqdm(h5file.keys()):
             count +=1
             print(f"Processing UID: {UID}")
 
