@@ -48,13 +48,13 @@ def convert_whisper(whisper_data, simmat):
     max_time = chunks[-1]['timestamp'][0]
     ntime_steps = simmat.shape[0]
     for t, chunk in enumerate(chunks):
-        begin = math.ceil((chunk['timestamp'][0] / (max_time + eps)) * ntime_steps)
+        begin = round((chunk['timestamp'][0] / (max_time + eps)) * ntime_steps)
 
         if chunk['timestamp'][1] is not None:
-            end = math.ceil((chunk['timestamp'][1] / (max_time + eps)) * ntime_steps)
+            end = round((chunk['timestamp'][1] / (max_time + eps)) * ntime_steps)
         else:
             end = simmat.shape[0]
-        whisper_mat[begin:end, t] = 1
+        whisper_mat[begin:end + 1, t] = 1
     return whisper_mat
 
 if __name__ == "__main__":
@@ -184,6 +184,10 @@ if __name__ == "__main__":
             l2_errors = []
             l1_errors = []
             dtw_errors = []
+            l1_errors_v2 = []
+            l1_errors_v3 = []
+            l1_path_errors = []
+
             for nlayer in range(num_layers_audio):
                 layer = all_innerprods[nlayer][promptpre:promptpost, promptpre:promptpost]
                 whisper_mat = convert_whisper(whisper_uid, layer)
@@ -198,9 +202,13 @@ if __name__ == "__main__":
                 # get the errors
                 l1_errors.append((whisper_mat - path_layer).abs().mean().item())
                 l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
+                l1_errors_v2.append((whisper_mat - layer).abs().mean().item())
+                l1_errors_v3.append((path_layer - layer).abs().mean().item())
 
                 path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
                 path_layer_ind = path_layer.argmax(1).cpu().numpy()
+
+                l1_path_errors.append(np.abs(path_whisper_ind - path_layer_ind).mean().item())
 
                 dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
                 dtw_errors.append(dtw_alignment.distance.item())
@@ -218,8 +226,11 @@ if __name__ == "__main__":
                 plt.savefig('path_last_layer.png')
 
 
-            filtered_data[UID] = {'innerprods': all_innerprods,
+            filtered_data[UID] = {#'innerprods': all_innerprods,
                                   'l1_errors': l1_errors,
+                                  'l1_errors_v2': l1_errors_v2,
+                                  'l1_errors_v3': l1_errors_v3,
+                                  'l1_path_errors': l1_path_errors,
                                   'l2_errors': l2_errors,
                                   'dtw_errors': dtw_errors}
             with open(args.output_path, "wb") as f:
