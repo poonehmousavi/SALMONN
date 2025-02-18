@@ -52,6 +52,11 @@ model:
   pool_size: 30
   prompt_size: 10
   p: 0.0
+  prompt_strategy: sim_strategy #sim_strategy , residual_strategy, att_strategy
+  similarity_method: cosine
+  use_prompt_threshhold : False
+  residual_threshold : 1e-5
+  attn_threshold : 1e-5
 
   multi_prompt: True
   prompt_template: "USER: {}\nASSISTANT:"
