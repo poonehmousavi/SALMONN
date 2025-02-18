@@ -35,6 +35,14 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text).strip()  # Remove extra spaces
     return text
 
+def process_ground_truths(ground_truths):
+    if isinstance(ground_truths, str):
+        return clean_text(ground_truths)
+    elif isinstance(ground_truths, list):
+        return [clean_text(text) for text in ground_truths]
+    else:
+        raise TypeError("ground_truths must be a string or a list of strings")
+
 
 class Runner:
     def __init__(self, cfg, model, datasets, job_id):
@@ -241,18 +249,18 @@ class Runner:
 
                 # Preprocess both ground truth and generated text
                 generated_texts = [clean_text(text) for text in generated_texts]
-                ground_truths = [clean_text(text) for text in ground_truths]
+                ground_truths =  process_ground_truths(ground_truths)
 
                 # **Exact Match Calculation**
                 exact_matches = torch.tensor(
-                    [p == t for p, t in zip(generated_texts, ground_truths)],
+                    [p == (t[0] if isinstance(t, list) else t) for p, t in zip(generated_texts, ground_truths)],
                     dtype=torch.float32,
                     device=self.device
                 )
                 total_correct += exact_matches.sum()
 
                 # **BLEU & ROUGE-L Preparation**
-                all_references.extend(ground_truths)
+                all_references.append(ground_truths if isinstance(ground_truths, list) else [ground_truths])
                 all_hypotheses.extend(generated_texts)
 
             results.append({
@@ -284,12 +292,12 @@ class Runner:
 
         # **Compute Corpus-Level BLEU Score**
         bleu_start_time = time.time()
-        bleu_score = bleu_metric.compute(predictions=all_hypotheses, references=[[ref] for ref in all_references])["bleu"]
+        bleu_score = bleu_metric.compute(predictions=all_hypotheses, references=[ref for ref in all_references])["bleu"]
         bleu_time = time.time() - bleu_start_time
 
         # **Compute Corpus-Level ROUGE-L and Rouge-4 Score**
         rouge_start_time = time.time()
-        rouge_scores = rouge_metric.compute(predictions=all_hypotheses, references=[[ref] for ref in all_references])
+        rouge_scores = rouge_metric.compute(predictions=all_hypotheses, references=[ref for ref in all_references])
         total_rouge4_score = sum(
             rouge_scorer_obj.score(ref, hyp)["rouge4"].fmeasure
             for ref, hyp in zip(all_references, all_hypotheses)
@@ -298,7 +306,7 @@ class Runner:
         
         # Compute WER 
         wer_start_time = time.time()
-        wer_score = wer_metric.compute(predictions=all_hypotheses, references=all_references)
+        wer_score = wer_metric.compute(predictions=all_hypotheses, references=[ref[0] if isinstance(ref, list) else ref for ref in all_references])
         wer_time = time.time() - wer_start_time
 
         # **Synchronize Across Distributed Processes**
