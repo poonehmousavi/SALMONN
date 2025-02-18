@@ -7,6 +7,10 @@ from sentence_transformers import SentenceTransformer
 import argparse
 import math
 import matplotlib.pyplot as plt
+import speechbrain
+import speechbrain.lobes.models.FastSpeech2 as fs2
+from dtw import *
+
 
 def norm_and_convolve(seq1, seq2):
     seq1, seq2 = seq1.squeeze(), seq2.squeeze()
@@ -42,7 +46,7 @@ def convert_whisper(whisper_data, simmat):
     max_time = chunks[-1]['timestamp'][0]
     ntime_steps = simmat.shape[0]
     for t, chunk in enumerate(chunks):
-        begin = math.floor((chunk['timestamp'][0] / max_time) * ntime_steps)
+        begin = math.ceil((chunk['timestamp'][0] / max_time) * ntime_steps)
 
         if chunk['timestamp'][1] is not None:
             end = math.ceil((chunk['timestamp'][1] / max_time) * ntime_steps)
@@ -173,51 +177,48 @@ if __name__ == "__main__":
                 promptpre = 27
                 promptpost = -23
  
-                qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
-                
-                # last_layer = all_innerprods[-1][promptpre:promptpost, promptpre:promptpost]
-                # whisper_mat = convert_whisper(whisper_uid, last_layer)
-                # plt.imshow(whisper_mat.transpose(1, 0).cpu())
-                # plt.savefig('whisper_mat.png')
+                # qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
+                l2_errors = []
+                l1_errors = []
+                dtw_errors = []
+                for nlayer in range(num_layers_audio):
+                    layer = all_innerprods[nlayer][promptpre:promptpost, promptpre:promptpost]
+                    whisper_mat = convert_whisper(whisper_uid, layer)
 
-                # plt.imshow(last_layer.transpose(1, 0))
-                # plt.savefig('last_layer.png')
+                    # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
 
+                    # get the paths
 
+                    # if we use this, than the dtw seems to turn into a trivial distance. path_whisper = fs2.maximum_path_numpy(whisper_mat.transpose(1,0).unsqueeze(0), torch.ones(whisper_mat.transpose(1,0).unsqueeze(0).shape))
+                    path_layer = fs2.maximum_path_numpy(layer.transpose(1,0).unsqueeze(0), torch.ones(layer.transpose(1,0).unsqueeze(0).shape)).squeeze().transpose(1, 0)
 
+                    # get the errors
+                    l1_errors.append((whisper_mat - path_layer).abs().mean().item())
+                    l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
 
-                
-                
+                    path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
+                    path_layer_ind = path_layer.argmax(1).cpu().numpy()
 
-
-
-                # for seq_idx in range(0,seq_len_text):
-                #     for layer_idx in range(0, num_layers_text): 
-                #         layer_group = text_group[f"tuple_{seq_idx}"]
-                #         
-                #         # Extract and fix sequence dimension
-                #         tensor = torch.tensor(layer_group[f"tensor_{layer_idx}"][:])  # (1, 1, 5120)
-                #         # tensor = tensor[:, :1, :].mean(dim=0)  # Take only first time step → (5120)
-
-                #         text_embeddings[seq_idx, layer_idx , :] = tensor.numpy()  # Offset by 1
-
-                # **Average Over Sequence Length (Handles Different seq_lens)**
-                # audio_layerwise = np.mean(audio_embeddings[1:], axis=0)  # Shape: (num_layers-1, 5120)
-                # text_layerwise = np.mean(text_embeddings[1:], axis=0)  # Shape: (num_layers-1, 5120)
-                # input_audio_layerwise = np.mean(audio_embeddings[:1], axis=0)  # Shape: (num_layers-1, 5120)
-                # input_text_layerwise = np.mean(text_embeddings[:1], axis=0)  # Shape: (num_layers-1, 5120)
-                
+                    dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
+                    dtw_errors.append(dtw_alignment.distance.item())
 
 
-                # Store the filtered data
-                # filtered_data[UID] = {
-                #     "text_similarity": text_similarity,
-                #     "audio_embedding": audio_layerwise,  # Shape: (num_layers-1, 5120)
-                #     "text_embedding": text_layerwise,  # Shape: (num_layers-1, 5120)
-                #     "input_audio_embedding": input_audio_layerwise,  # Shape: (num_layers-1, 5120)
-                #     "input_text_embedding": input_text_layerwise,  # Shape: (num_layers-1, 5120)
-                # }
-                filtered_data[UID] = {'innerprods' : all_innerprods}
+                # if we want to see what is going on
+                if 0:
+                    plt.imshow(path_whisper[0].cpu())
+                    plt.savefig('whisper_mat.png')
+
+                    plt.imshow(layer.transpose(1, 0).cpu())
+                    plt.savefig('last_layer.png')
+
+                    plt.imshow(path_lastlayer[0].cpu())
+                    plt.savefig('path_last_layer.png')
+
+
+                filtered_data[UID] = {'innerprods': all_innerprods,
+                                      'l1_errors': l1_errors,
+                                      'l2_errors': l2_errors,
+                                      'dtw_errors': dtw_errors}
                 with open(args.output_path, "wb") as f:
                     pickle.dump(filtered_data, f)
 
