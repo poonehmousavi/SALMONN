@@ -44,13 +44,14 @@ def convert_whisper(whisper_data, simmat):
     whisper_mat = torch.zeros(simmat.shape)
     chunks = whisper_data['whisper_results']['chunks']
 
+    eps = 1e-20
     max_time = chunks[-1]['timestamp'][0]
     ntime_steps = simmat.shape[0]
     for t, chunk in enumerate(chunks):
-        begin = math.ceil((chunk['timestamp'][0] / max_time) * ntime_steps)
+        begin = math.ceil((chunk['timestamp'][0] / (max_time + eps)) * ntime_steps)
 
         if chunk['timestamp'][1] is not None:
-            end = math.ceil((chunk['timestamp'][1] / max_time) * ntime_steps)
+            end = math.ceil((chunk['timestamp'][1] / (max_time + eps)) * ntime_steps)
         else:
             end = simmat.shape[0]
         whisper_mat[begin:end, t] = 1
@@ -102,130 +103,131 @@ if __name__ == "__main__":
     model_qwen = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", device_map="auto")
     
     whisper_data = pickle.load(open(args.whisper_path, 'rb'))
-    with h5py.File(h5_filename, "r") as h5file:
-        for UID in tqdm.tqdm(h5file.keys()):
-            count +=1
-            print(f"Processing UID: {UID}")
+    #with h5py.File(h5_filename, "r") as h5file:
+    h5file = h5py.File(h5_filename, "r")
+    for UID in tqdm.tqdm(h5file.keys()):
+        count +=1
+        print(f"Processing UID: {UID}")
 
-            # Load response texts
-            #response_text_audio = h5file[UID]["audio_model"].attrs["response_text"][0]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
-            #response_text_text = h5file[UID]["text_model"].attrs["response_text"][0] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
+        # Load response texts
+        #response_text_audio = h5file[UID]["audio_model"].attrs["response_text"][0]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
+        #response_text_text = h5file[UID]["text_model"].attrs["response_text"][0] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
 
-            response_text_audio = h5file[UID]["audio_model"].attrs["response_text"]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
-            response_text_text = h5file[UID]["text_model"].attrs["response_text"] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
-
-
-            # Convert response texts into sentence embeddings
-            audio_text_embedding = text_embedder.encode(response_text_audio)
-            text_text_embedding = text_embedder.encode(response_text_text)
-
-            # Compute Cosine Similarity of response texts
-            text_similarity = cosine_similarity([audio_text_embedding], [text_text_embedding])[0, 0]
-            print(f"Text Similarity for {UID}: {text_similarity:.2f}")
-
-            # **Filter by similarity threshold**
-            if text_similarity >= SIMILARITY_THRESHOLD:
-                print(f"Keeping {UID} (Similarity: {text_similarity:.2f})")
-
-                # Load embeddings
-                audio_group = h5file[UID]["audio_model"]
-                text_group = h5file[UID]["text_model"]
-
-                # **Extract Correct Number of Layers**
-                num_layers_audio = len(audio_group["tuple_0"])  # Number of layers
-                num_layers_text = len(text_group["tuple_0"])
-
-                assert num_layers_audio == num_layers_text, "Mismatch in number of layers!"
-
-                # **Extract Sequence Lengths**
-                seq_len_audio = len(audio_group)  # Variable sequence length
-                seq_len_text = len(text_group)
-
-                # Initialize storage for layer-wise embeddings (Excluding layer 0)
-                audio_embeddings = np.zeros((seq_len_audio, num_layers_audio, hidden_dim))
-                text_embeddings = np.zeros((seq_len_text, num_layers_text, hidden_dim))
-
-                # **Extract All Layers but **
-                # for seq_idx in range(0,seq_len_audio):
-                #     for layer_idx in range(0, num_layers_audio):
-
-                #         layer_group = audio_group[f"tuple_{seq_idx}"]
-                #         
-                #         # Extract and fix sequence dimension
-                #         tensor = torch.tensor(layer_group[f"tensor_{layer_idx}"][:])  # (1, 1, 5120) or (1, input_seq. 5120) if it is seq-0 since it contains input hidden states.
-
-                #         audio_embeddings[seq_idx, layer_idx, :] = tensor.numpy()  
-                # only taking the input 
-                
-                all_innerprods = []
-                for nlayer in range(num_layers_audio):
-                    audio_embeddings = audio_group["tuple_0"][f'tensor_{nlayer}'][:]
-                    text_embeddings = text_group["tuple_0"][f'tensor_{nlayer}'][:]
-
-                    audio_embeddings = torch.from_numpy(audio_embeddings).cuda()
-                    text_embeddings = torch.from_numpy(text_embeddings).cuda()
-
-                    all_innerprods.append(norm_and_convolve(audio_embeddings, text_embeddings))
-
-                
-                whisper_uid = whisper_data[UID]
-
-                text_whisper = whisper_uid['transcript']
-                
-                #qwen_tokens = processor_qwen.tokenizer(text_whisper)['input_ids']
-
-                # take the last layer, and eliminate the prompt part
-                promptpre = 27
-                promptpost = -23
- 
-                # qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
-                l2_errors = []
-                l1_errors = []
-                dtw_errors = []
-                for nlayer in range(num_layers_audio):
-                    layer = all_innerprods[nlayer][promptpre:promptpost, promptpre:promptpost]
-                    whisper_mat = convert_whisper(whisper_uid, layer)
-
-                    # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
-
-                    # get the paths
-
-                    # if we use this, than the dtw seems to turn into a trivial distance. path_whisper = fs2.maximum_path_numpy(whisper_mat.transpose(1,0).unsqueeze(0), torch.ones(whisper_mat.transpose(1,0).unsqueeze(0).shape))
-                    path_layer = fs2.maximum_path_numpy(layer.transpose(1,0).unsqueeze(0), torch.ones(layer.transpose(1,0).unsqueeze(0).shape)).squeeze().transpose(1, 0)
-
-                    # get the errors
-                    l1_errors.append((whisper_mat - path_layer).abs().mean().item())
-                    l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
-
-                    path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
-                    path_layer_ind = path_layer.argmax(1).cpu().numpy()
-
-                    dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
-                    dtw_errors.append(dtw_alignment.distance.item())
+        response_text_audio = h5file[UID]["audio_model"].attrs["response_text"]  #change to input_audio_model if you want to get input hiddensates and audio_model if you want to get output hiddenstates
+        response_text_text = h5file[UID]["text_model"].attrs["response_text"] #change to input_text_model if you want to get input hiddensates and text_model if you want to get output hiddenstate
 
 
-                # if we want to see what is going on
-                if 0:
-                    plt.imshow(path_whisper[0].cpu())
-                    plt.savefig('whisper_mat.png')
+        # Convert response texts into sentence embeddings
+        audio_text_embedding = text_embedder.encode(response_text_audio)
+        text_text_embedding = text_embedder.encode(response_text_text)
 
-                    plt.imshow(layer.transpose(1, 0).cpu())
-                    plt.savefig('last_layer.png')
+        # Compute Cosine Similarity of response texts
+        text_similarity = cosine_similarity([audio_text_embedding], [text_text_embedding])[0, 0]
+        print(f"Text Similarity for {UID}: {text_similarity:.2f}")
 
-                    plt.imshow(path_lastlayer[0].cpu())
-                    plt.savefig('path_last_layer.png')
+        # **Filter by similarity threshold**
+        if text_similarity >= SIMILARITY_THRESHOLD:
+            print(f"Keeping {UID} (Similarity: {text_similarity:.2f})")
+
+            # Load embeddings
+            audio_group = h5file[UID]["audio_model"]
+            text_group = h5file[UID]["text_model"]
+
+            # **Extract Correct Number of Layers**
+            num_layers_audio = len(audio_group["tuple_0"])  # Number of layers
+            num_layers_text = len(text_group["tuple_0"])
+
+            assert num_layers_audio == num_layers_text, "Mismatch in number of layers!"
+
+            # **Extract Sequence Lengths**
+            seq_len_audio = len(audio_group)  # Variable sequence length
+            seq_len_text = len(text_group)
+
+            # Initialize storage for layer-wise embeddings (Excluding layer 0)
+            audio_embeddings = np.zeros((seq_len_audio, num_layers_audio, hidden_dim))
+            text_embeddings = np.zeros((seq_len_text, num_layers_text, hidden_dim))
+
+            # **Extract All Layers but **
+            # for seq_idx in range(0,seq_len_audio):
+            #     for layer_idx in range(0, num_layers_audio):
+
+            #         layer_group = audio_group[f"tuple_{seq_idx}"]
+            #         
+            #         # Extract and fix sequence dimension
+            #         tensor = torch.tensor(layer_group[f"tensor_{layer_idx}"][:])  # (1, 1, 5120) or (1, input_seq. 5120) if it is seq-0 since it contains input hidden states.
+
+            #         audio_embeddings[seq_idx, layer_idx, :] = tensor.numpy()  
+            # only taking the input 
+            
+            all_innerprods = []
+            for nlayer in range(num_layers_audio):
+                audio_embeddings = audio_group["tuple_0"][f'tensor_{nlayer}'][:]
+                text_embeddings = text_group["tuple_0"][f'tensor_{nlayer}'][:]
+
+                audio_embeddings = torch.from_numpy(audio_embeddings).cuda()
+                text_embeddings = torch.from_numpy(text_embeddings).cuda()
+
+                all_innerprods.append(norm_and_convolve(audio_embeddings, text_embeddings))
+
+            
+            whisper_uid = whisper_data[UID]
+
+            text_whisper = whisper_uid['transcript']
+            
+            #qwen_tokens = processor_qwen.tokenizer(text_whisper)['input_ids']
+
+            # take the last layer, and eliminate the prompt part
+            promptpre = 27
+            promptpost = -23
+
+            # qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
+            l2_errors = []
+            l1_errors = []
+            dtw_errors = []
+            for nlayer in range(num_layers_audio):
+                layer = all_innerprods[nlayer][promptpre:promptpost, promptpre:promptpost]
+                whisper_mat = convert_whisper(whisper_uid, layer)
+
+                # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
+
+                # get the paths
+
+                # if we use this, than the dtw seems to turn into a trivial distance. path_whisper = fs2.maximum_path_numpy(whisper_mat.transpose(1,0).unsqueeze(0), torch.ones(whisper_mat.transpose(1,0).unsqueeze(0).shape))
+                path_layer = fs2.maximum_path_numpy(layer.transpose(1,0).unsqueeze(0), torch.ones(layer.transpose(1,0).unsqueeze(0).shape)).squeeze().transpose(1, 0)
+
+                # get the errors
+                l1_errors.append((whisper_mat - path_layer).abs().mean().item())
+                l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
+
+                path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
+                path_layer_ind = path_layer.argmax(1).cpu().numpy()
+
+                dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
+                dtw_errors.append(dtw_alignment.distance.item())
 
 
-                filtered_data[UID] = {'innerprods': all_innerprods,
-                                      'l1_errors': l1_errors,
-                                      'l2_errors': l2_errors,
-                                      'dtw_errors': dtw_errors}
-                with open(args.output_path, "wb") as f:
-                    pickle.dump(filtered_data, f)
+            # if we want to see what is going on
+            if 0:
+                plt.imshow(path_whisper[0].cpu())
+                plt.savefig('whisper_mat.png')
 
-            else:
-                print(f"Skipping {UID} (Similarity: {text_similarity:.2f})")
-                skip_count +=1
+                plt.imshow(layer.transpose(1, 0).cpu())
+                plt.savefig('last_layer.png')
+
+                plt.imshow(path_lastlayer[0].cpu())
+                plt.savefig('path_last_layer.png')
+
+
+            filtered_data[UID] = {'innerprods': all_innerprods,
+                                  'l1_errors': l1_errors,
+                                  'l2_errors': l2_errors,
+                                  'dtw_errors': dtw_errors}
+            with open(args.output_path, "wb") as f:
+                pickle.dump(filtered_data, f)
+
+        else:
+            print(f"Skipping {UID} (Similarity: {text_similarity:.2f})")
+            skip_count +=1
 
     # Save Filtered Data
     print(f"total number of skipped is {skip_count} from total {count}")
