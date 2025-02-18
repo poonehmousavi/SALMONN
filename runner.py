@@ -249,7 +249,7 @@ class Runner:
 
                 # Preprocess both ground truth and generated text
                 generated_texts = [clean_text(text) for text in generated_texts]
-                ground_truths =  process_ground_truths(ground_truths)
+                ground_truths =  [ process_ground_truths(text) for text in ground_truths]
 
                 # **Exact Match Calculation**
                 exact_matches = torch.tensor(
@@ -260,7 +260,7 @@ class Runner:
                 total_correct += exact_matches.sum()
 
                 # **BLEU & ROUGE-L Preparation**
-                all_references.append(ground_truths if isinstance(ground_truths, list) else [ground_truths])
+                all_references.extend(ground_truths if isinstance(ground_truths, list) else [ground_truths])
                 all_hypotheses.extend(generated_texts)
 
             results.append({
@@ -299,7 +299,7 @@ class Runner:
         rouge_start_time = time.time()
         rouge_scores = rouge_metric.compute(predictions=all_hypotheses, references=[ref for ref in all_references])
         total_rouge4_score = sum(
-            rouge_scorer_obj.score(ref, hyp)["rouge4"].fmeasure
+            rouge_scorer_obj.score(ref[0] if isinstance(ref, list) else ref, hyp)["rouge4"].fmeasure
             for ref, hyp in zip(all_references, all_hypotheses)
         ) / len(all_references)
         rouge_time = time.time() - rouge_start_time
