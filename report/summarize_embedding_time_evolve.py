@@ -188,8 +188,8 @@ if __name__ == "__main__":
             promptpost = -t
 
             # just doing this in case strings do not match due to special characters 
-            if t > (len(qwen_tokens[promptpre_text:]) - 1):
-                t = len(qwen_tokens[promptpre_text:]) // 2
+            # if t > (len(qwen_tokens[promptpre_text:]) - 1):
+            #     t = len(qwen_tokens[promptpre_text:]) // 2
 
             # qwen_tokens = processor_qwen.tokenizer(whisper_uid['qwen_prompt'])
             l2_errors = []
@@ -199,52 +199,55 @@ if __name__ == "__main__":
             l1_errors_v3 = []
             l1_path_errors = []
 
-            for nlayer in range(num_layers_audio):
-                layer = all_innerprods[nlayer][promptpre_audio:promptpost, promptpre_text:promptpost]
-                whisper_mat = convert_whisper(whisper_uid, layer)
+            try:
+                for nlayer in range(num_layers_audio):
+                    layer = all_innerprods[nlayer][promptpre_audio:promptpost, promptpre_text:promptpost]
+                    whisper_mat = convert_whisper(whisper_uid, layer)
 
-                # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
+                    # path_whisher = fs2.maximum_path_numpy(whisper_mat.unsqueeze(0), torch.ones(whisper_mat.unsqueeze(0).shape))
 
-                # get the paths
+                    # get the paths
 
-                # if we use this, than the dtw seems to turn into a trivial distance. path_whisper = fs2.maximum_path_numpy(whisper_mat.transpose(1,0).unsqueeze(0), torch.ones(whisper_mat.transpose(1,0).unsqueeze(0).shape))
-                path_layer = fs2.maximum_path_numpy(layer.transpose(1,0).unsqueeze(0), torch.ones(layer.transpose(1,0).unsqueeze(0).shape)).squeeze().transpose(1, 0)
+                    # if we use this, than the dtw seems to turn into a trivial distance. path_whisper = fs2.maximum_path_numpy(whisper_mat.transpose(1,0).unsqueeze(0), torch.ones(whisper_mat.transpose(1,0).unsqueeze(0).shape))
+                    path_layer = fs2.maximum_path_numpy(layer.transpose(1,0).unsqueeze(0), torch.ones(layer.transpose(1,0).unsqueeze(0).shape)).squeeze().transpose(1, 0)
 
-                # get the errors
-                l1_errors.append((whisper_mat - path_layer).abs().mean().item())
-                l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
-                l1_errors_v2.append((whisper_mat - layer).abs().mean().item())
-                l1_errors_v3.append((path_layer - layer).abs().mean().item())
+                    # get the errors
+                    l1_errors.append((whisper_mat - path_layer).abs().mean().item())
+                    l2_errors.append(((whisper_mat - path_layer)**2).sqrt().mean().item())
+                    l1_errors_v2.append((whisper_mat - layer).abs().mean().item())
+                    l1_errors_v3.append((path_layer - layer).abs().mean().item())
 
-                path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
-                path_layer_ind = path_layer.argmax(1).cpu().numpy()
+                    path_whisper_ind = whisper_mat.argmax(1).cpu().numpy()
+                    path_layer_ind = path_layer.argmax(1).cpu().numpy()
 
-                l1_path_errors.append(np.abs(path_whisper_ind - path_layer_ind).mean().item())
+                    l1_path_errors.append(np.abs(path_whisper_ind - path_layer_ind).mean().item())
 
-                dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
-                dtw_errors.append(dtw_alignment.distance.item())
+                    dtw_alignment = dtw(path_whisper_ind, path_layer_ind)
+                    dtw_errors.append(dtw_alignment.distance.item())
 
 
-            # if we want to see what is going on
-            if 0:
-                plt.imshow(whisper_mat.transpose(1, 0).cpu())
-                plt.savefig('whisper_mat.png')
+                # if we want to see what is going on
+                if 0:
+                    plt.imshow(whisper_mat.transpose(1, 0).cpu())
+                    plt.savefig('whisper_mat.png')
 
-                plt.imshow(layer.transpose(1, 0).cpu())
-                plt.savefig('last_layer.png')
+                    plt.imshow(layer.transpose(1, 0).cpu())
+                    plt.savefig('last_layer.png')
 
-                plt.imshow(path_layer.transpose(1, 0).cpu())
-                plt.savefig('path_last_layer.png')
+                    plt.imshow(path_layer.transpose(1, 0).cpu())
+                    plt.savefig('path_last_layer.png')
 
-            filtered_data[UID] = {#'innerprods': all_innerprods,
-                                  'l1_errors': l1_errors,
-                                  'l1_errors_v2': l1_errors_v2,
-                                  'l1_errors_v3': l1_errors_v3,
-                                  'l1_path_errors': l1_path_errors,
-                                  'l2_errors': l2_errors,
-                                  'dtw_errors': dtw_errors}
-            with open(args.output_path, "wb") as f:
-                pickle.dump(filtered_data, f)
+                filtered_data[UID] = {#'innerprods': all_innerprods,
+                                      'l1_errors': l1_errors,
+                                      'l1_errors_v2': l1_errors_v2,
+                                      'l1_errors_v3': l1_errors_v3,
+                                      'l1_path_errors': l1_path_errors,
+                                      'l2_errors': l2_errors,
+                                      'dtw_errors': dtw_errors}
+                with open(args.output_path, "wb") as f:
+                    pickle.dump(filtered_data, f)
+            except:
+                pass
 
         else:
             print(f"Skipping {UID} (Similarity: {text_similarity:.2f})")
